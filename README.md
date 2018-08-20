@@ -1,6 +1,6 @@
-# vue-project
+# tomohisa ohsawa ポートフォリオサイト  
 
-> A Vue.js project
+> Vue.jsでポートフォリオサイトを作成したリポジトリです。
 
 ## Build Setup
 
