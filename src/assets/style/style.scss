@@ -1,0 +1,58 @@
+@charset 'utf-8';
+@import '_reset.css';
+
+html,body{
+  height: 100%
+}
+h2 {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 2em;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1em;
+  font-weight: 900;
+}
+.row {
+  display: flex;
+}
+.bg {
+  background-color: #f6f6f6;
+}
+h1 {
+  font-size: 3em;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  padding-top: 2em;
+  text-shadow: 1px 1px 2px white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
+/** v-cloak */
+[v-cloak] {
+  display: none;
+}
+/** Transition */
+.fade-enter-active {
+  transition: opacity 1s ease-in
+}
+.fade-leave-active {
+  transition: opacity .1s ease-out
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
+
+body{
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+}
