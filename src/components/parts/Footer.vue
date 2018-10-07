@@ -1,15 +1,26 @@
 <template>
-<nav class="footer-nav">
-<ul>
-  <li><router-link to="/">Home</router-link></li>
-<li><router-link to="/works">Works</router-link></li>
-<li><router-link to="/about">About</router-link></li>
-<li><router-link to="/contact">Contact</router-link></li>
-<li class="copy">© 2018 © tomohisa ohsawa All rights reserved.</li>
-</ul>
+  <nav class="footer-nav">
+    <ul>
+      <li>
+        <router-link to="/">Home</router-link>
+      </li>
+      <li>
+        <router-link to="/works">Works</router-link>
+      </li>
+      <li>
+        <router-link to="/about">About</router-link>
+      </li>
+      <li>
+        <router-link to="/contact">Contact</router-link>
+      </li>
+      <li>
+        <a href="https://github.com/kebin090/portofolio" target="_blank" style="margin-top:-10px"><img :src="github"></a>
+      </li>
+      <li class="copy">© 2018 © tomohisa ohsawa All rights reserved.</li>
 
+    </ul>
 
-<!--div class="bottom-particles">
+    <!--div class="bottom-particles">
   <div class="bubble"></div>
   <div class="bubble"></div>
   <div class="bubble"></div>
@@ -211,9 +222,18 @@
   <div class="bubble"></div>
   <div class="bubble"></div>
 </div-->
-</nav>
+  </nav>
 
 </template>
+<script>
+export default {
+  data: function() {
+    return {
+      github: require("../../assets/img/github.png")
+    };
+  }
+};
+</script>
 
 <style lang="scss">
 /** Contents */
@@ -283,9 +303,9 @@
     margin-right: 6em;
   }
 }
-@media (max-width:480px){
-  .copy{
-    font-size: .3em;
+@media (max-width: 480px) {
+  .copy {
+    font-size: 0.3em;
     margin-top: 1em;
   }
 }
