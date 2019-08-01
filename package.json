@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "connect-history-api-fallback": "^1.6.0",
     "element-ui": "^2.4.6",
     "vue": "^2.5.2",
     "vue-analytics": "^5.12.3",

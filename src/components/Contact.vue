@@ -125,7 +125,7 @@ export default {
   padding: 12px 20px;
   font-size: 14px;
   border-radius: 4px;
-  margin-left: 15.4em;
+  margin-left: 20em;
 }
 @media (max-width: 480px) {
   .contact {
