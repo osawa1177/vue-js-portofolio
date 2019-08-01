@@ -1,7 +1,7 @@
 
 import Vue from 'vue'
 import App from './App'
-import titleMixin from './util/title' 
+import titleMixin from './util/title'
 import descriptionMixin from './util/description' 
 import router from './router'
 import VueAnalytics from 'vue-analytics'
@@ -14,13 +14,13 @@ import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI, {locale});
 
 
-Vue.config.productionTip = false
-Vue.mixin(titleMixin)
-Vue.mixin(descriptionMixin)
+Vue.config.productionTip = false;
+Vue.mixin(titleMixin);
+Vue.mixin(descriptionMixin);
 Vue.use(VueAnalytics, {
   id: 'UA-XXX-X',
   router
-})
+});
 
 /* eslint-disable no-new */
 new Vue({
@@ -28,4 +28,5 @@ new Vue({
   router,
   components: { App },
   template: '<App/>'
-})
+});
+Vue.config.devtools = true;

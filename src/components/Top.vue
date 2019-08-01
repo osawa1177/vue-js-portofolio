@@ -58,7 +58,7 @@
           </div>
           <div id="progress" class="graph">
             <div id="bar" style="width:30%">
-              <p>PHP</p>
+              <p>PHP / Laravel </p>
             </div>
           </div>
           <div id="progress" class="graph">
@@ -78,12 +78,12 @@
           </div>
           <div id="progress" class="graph">
             <div id="bar" style="width:67%">
-              <p>gulp / webpack</p>
+              <p>gulp </p>
             </div>
           </div>
           <div id="progress" class="graph">
             <div id="bar" style="width:72%">
-              <p>Visual Studio Code / Dreamweaver</p>
+              <p>PhpStorm / Visual Studio Code / Dreamweaver</p>
             </div>
           </div>
           <div id="progress" class="graph">
@@ -98,7 +98,7 @@
           </div>
           <div id="progress" class="graph">
             <div id="bar" style="width:75%">
-              <p>Adobe XD / Skech</p>
+              <p>Adobe XD </p>
             </div>
           </div>
           <div id="progress" class="graph">
@@ -108,7 +108,7 @@
           </div>
           <div id="progress" class="graph">
             <div id="bar" style="width:87%">
-              <p>Redmine / backlog</p>
+              <p>backlog</p>
             </div>
           </div>
         </div>
