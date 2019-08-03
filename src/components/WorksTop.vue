@@ -1,37 +1,45 @@
 <template lang="html">
   <div>
     <moveline></moveline>
-    <div class="wrapper workstop">
+    <div class="wrap work-stop mt-4 relative">
       <h2>Works</h2>
-      <div class="box">
-        <figure>
-          <img :src="geechs01">
-        </figure>
-        <h3 class="ttl">geechs job サイト リニューアル </h3>
-        <p class="skill"> Icon Design /HTML,CSS,javascript </p>
-        <p class="read"> 以前からあったフリーランス検索サイトのリニューアル作業を行いました。その中でフロントのコーディングをメインに作業しました。<br>
-          <a href="https://geechs-job.com/" target="_blank" class="text-link">https://geechs-job.com/</a>
-        </p>
-        <figure>
-          <img :src="pop01">
-        </figure>
-        <h3 class="ttl">POP SNOW リフト券プレゼントキャンペーン </h3>
-        <p class="skill"> Design / HTML,CSS,javascript</p>
-        <p class="read"> 日本全国、様々なスキー場様からご協賛をいただきスキー場検索サイトPOPSNOW内でリフト券のプレゼントキャンペーンを行いました。</p>
-        <figure>
-          <img :src="fuyu01">
-        </figure>
-        <h3 class="ttl">冬スポツアー　温泉特集ページ </h3>
-        <p class="skill"> Design / HTML,CSS,javascript </p>
-        <p class="read">冬スポ!!WINTER SPORT FESTAのサイト内にスキー・スノーボードツアーページを作成し、その中で温泉ページ特集を作成しました。</p>
-        <figure>
-          <img :src="pop02">
-        </figure>
-        <h3 class="ttl">日本スキー場開発様のプレゼントキャンペーンページ</h3>
-        <p class="skill"> Design / HTML,CSS,javascript </p>
-        <p class="read">日本スキー場開発様からご協賛をいただきスキー場検索サイトPOPSNOW内でリフト券のプレゼントキャンペーンを行いました。</p>
+      <article>
+        <section>
+          <figure>
+            <img :src="geechs01">
+          </figure>
+          <h3 class="ttl">geechs job サイト リニューアル </h3>
+          <p class="skill"> Icon Design /HTML,CSS,javascript </p>
+          <p class="read"> 以前からあったフリーランス検索サイトのリニューアル作業を行いました。その中でフロントのコーディングをメインに作業しました。<br>
+            <a href="https://geechs-job.com/" target="_blank" class="text-link">https://geechs-job.com/</a>
+          </p>
+        </section>
 
-      </div>
+        <section>
+          <figure>
+            <img :src="pop01">
+          </figure>
+          <h3 class="ttl">POP SNOW リフト券プレゼントキャンペーン </h3>
+          <p class="skill"> Design / HTML,CSS,javascript</p>
+          <p class="read"> 日本全国、様々なスキー場様からご協賛をいただきスキー場検索サイトPOPSNOW内でリフト券のプレゼントキャンペーンを行いました。</p>
+        </section>
+        <section>
+          <figure>
+            <img :src="fuyu01">
+          </figure>
+          <h3 class="ttl">冬スポツアー　温泉特集ページ </h3>
+          <p class="skill"> Design / HTML,CSS,javascript </p>
+          <p class="read">冬スポ!!WINTER SPORT FESTAのサイト内にスキー・スノーボードツアーページを作成し、その中で温泉ページ特集を作成しました。</p>
+        </section>
+        <section>
+          <figure>
+            <img :src="pop02">
+          </figure>
+          <h3 class="ttl">日本スキー場開発様のプレゼントキャンペーンページ</h3>
+          <p class="skill"> Design / HTML,CSS,javascript </p>
+          <p class="read">日本スキー場開発様からご協賛をいただきスキー場検索サイトPOPSNOW内でリフト券のプレゼントキャンペーンを行いました。</p>
+        </section>
+      </article>
 
     </div>
   </div>
@@ -59,10 +67,8 @@
 
 <style lang="scss" scoped>
 
-  .workstop {
+  .work-stop {
     h2 {
-      -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
       font-size: 2em;
       border-bottom: 1px solid #000;
@@ -77,18 +83,14 @@
       width: 100%;
     }
 
-    .box {
-      margin-left: 3em;
-    }
-
-    h3 {
+    .ttl {
       margin-top: 1em;
       margin-bottom: 1em;
       font-weight: 900;
+      font-size: 1.2rem;
     }
 
     .skill {
-      margin-bottom: 1em;
     }
 
     .read {
@@ -96,6 +98,7 @@
       border-bottom: 1px solid #ccc;
       padding-bottom: 3em;
       margin-bottom: 3em;
+      color: #373737;
     }
 
     a {
@@ -108,10 +111,12 @@
     }
   }
 
-  .wrapper {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 3em;
+  article {
+    section:last-of-type {
+      :last-child {
+        border-bottom: none;
+      }
+    }
   }
+
 </style>
