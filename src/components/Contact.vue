@@ -1,27 +1,29 @@
 <template>
   <div>
     <moveline></moveline>
-    <div class="wrapper contact">
+    <div class="wrap contact relative mt-4">
       <h2>Contact</h2>
-      <form class="work-request" method="post" action="mail.php">
-        <div class="work-request--information">
-          <div class="info-name">
-            <label for="name">お名前</label>
-            <input id="name" type="text" spellcheck="false" name="お名前">
-          </div>
-          <div class="info-email">
-            <label for="email">メールアドレス</label>
-            <input id="email" type="email" spellcheck="false" name="Email">
-          </div>
-          <div class="info-q">
-            <label>お問い合わせ</label>
-            <div>
-              <textarea></textarea>
+      <section class="form-block">
+        <form class="work-request ml-4" method="post" action="mail.php">
+          <div class="work-request--information">
+            <div class="info-name">
+              <label for="name">お名前</label>
+              <input id="name" type="text" spellcheck="false" name="お名前">
             </div>
+            <div class="info-email">
+              <label for="email">メールアドレス</label>
+              <input id="email" type="email" spellcheck="false" name="Email">
+            </div>
+            <div class="info-q">
+              <label>お問い合わせ</label>
+              <div class="textarea">
+                <textarea></textarea>
+              </div>
+            </div>
+            <input type="submit" value="送信" class="btn01">
           </div>
-          <input type="submit" value="Send Message" class="btn01">
-        </div>
-      </form>
+        </form>
+      </section>
     </div>
   </div>
 </template>
@@ -48,10 +50,13 @@
     }
   }
 
+  .form-block{
+    background-color: #f6f6f6;
+    padding: 4rem 3rem;
+  }
+
   .contact {
     h2 {
-      -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
       font-size: 2em;
       border-bottom: 1px solid #000;
@@ -65,8 +70,9 @@
     .info-email,
     .info-q,
     .info-name {
+      display: flex;
+
       input {
-        -webkit-appearance: none;
         background-color: #fff;
         background-image: none;
         border-radius: 4px;
@@ -80,20 +86,18 @@
         outline: 0;
         padding: 0 15px;
         transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-        width: 65%;
         margin-bottom: 1em;
+        flex-basis: 70%;
+
       }
 
       label {
-        text-align: right;
-        float: left;
         font-size: 14px;
         color: #606266;
         line-height: 40px;
         padding: 0 12px 0 0;
         box-sizing: border-box;
-        width: 30%;
-        padding-right: 3em;
+        flex-basis: 20%;
       }
 
       textarea {
@@ -110,18 +114,15 @@
         border: 1px solid #dcdfe6;
         border-radius: 4px;
         transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-        width: 65%;
         padding-bottom: 3em;
         margin-bottom: 1em;
+        flex-basis: 70%;
       }
     }
   }
 
-  .wrapper {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 3em;
+  .textarea{
+    flex-basis: 70%;
   }
 
   .btn01 {
@@ -140,10 +141,11 @@
     margin: 0;
     transition: 0.1s;
     font-weight: 500;
-    padding: 12px 20px;
+    padding: 20px 100px;
     font-size: 14px;
     border-radius: 4px;
-    margin-left: 20em;
+    margin: 2rem auto 1rem;
+    display: block;
   }
 
   @media (max-width: 480px) {
