@@ -137,12 +137,6 @@
 
 <style lang="scss" scoped>
 
-  #app {
-    overflow: hidden;
-    position: relative;
-    min-height: 100%;
-  }
-
   .works {
     max-width: 1200px;
     margin: 0 auto;
