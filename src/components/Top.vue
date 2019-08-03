@@ -1,5 +1,6 @@
 <template>
   <div class="top">
+    <moveline></moveline>
     <section>
       <transition name="fade">
         <div class="row">
@@ -119,7 +120,8 @@
 </template>
 
 <script>
-import service from "@/components/parts/service";
+import service from "@/components/parts/Service";
+import moveline from "@/components/parts/Moveline";
 
 export default {
   name: "top",
@@ -127,7 +129,8 @@ export default {
   description: " tomohisa ohsawaのポートフォリオサイト", // description 追加
   props: ["data"],
   components: {
-    ser: service
+    ser: service,
+    moveline: moveline
   },
   data: function() {
     return {
@@ -161,6 +164,10 @@ export default {
   .title {
     margin-left: -16em;
   }
+}
+
+.top{
+  position: relative;
 }
 
 .works {
