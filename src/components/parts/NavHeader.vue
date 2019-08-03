@@ -97,11 +97,21 @@
       width: 40%;
       margin-bottom: 0;
       padding-top: 4em;
+      font-size: 10px;
+      display: block;
 
       img {
         width: 60%;
       }
+
+      a {
+        color: #000;
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
+
     header
     .header-nav {
       text-align: left;

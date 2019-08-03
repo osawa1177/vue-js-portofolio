@@ -1,312 +1,114 @@
 <template>
-  <nav class="footer-nav">
-    <ul>
-      <li>
-        <router-link to="/">Home</router-link>
-      </li>
-      <li>
-        <router-link to="/works">Works</router-link>
-      </li>
-      <li>
-        <router-link to="/about">About</router-link>
-      </li>
-      <li>
-        <router-link to="/contact">Contact</router-link>
-      </li>
-      <li>
-        <a href="https://github.com/kebin090/portofolio" target="_blank" style="margin-top:-10px"><img :src="github"></a>
-      </li>
-      <li class="copy">© 2018 © tomohisa ohsawa All rights reserved.</li>
+  <footer class="wrap">
+    <nav class="footer-nav">
+      <div>
+        <img :src="logo" alt="tomohisa.osawa-logo" class="footer-logo">
+      </div>
+      <ul>
+        <li>
+          <router-link to="/">Home</router-link>
+        </li>
+        <li>
+          <router-link to="/works">Works</router-link>
+        </li>
+        <li>
+          <router-link to="/about">About</router-link>
+        </li>
+        <li>
+          <router-link to="/contact">Contact</router-link>
+        </li>
+        <li>
+          <a href="https://github.com/ohsawa1177/vue-js-portofolio" target="_blank"><img
+            :src="github"></a>
+        </li>
+      </ul>
+    </nav>
+    <span class="copy">© 2019 © tomohisa ohsawa All rights reserved.</span>
 
-    </ul>
-
-    <!--div class="bottom-particles">
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-  <div class="bubble"></div>
-</div-->
-  </nav>
-
+  </footer>
 </template>
 <script>
-export default {
-  data: function() {
-    return {
-      github: require("../../assets/img/github.png")
-    };
-  }
-};
+  export default {
+    data: function () {
+      return {
+        github: require("../../assets/img/github.png"),
+        logo: require("../../assets/img/logo.svg")
+      };
+    }
+  };
 </script>
 
 <style lang="scss">
-/** Contents */
-// .footer-outer {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   z-index: 9999;
-// }
-.site-title {
-  font-size: 10px;
-  display: block;
-  a {
-    color: #000;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
-.footer-nav {
-  max-width: 1200px;
-  height: 3em;
-  margin-left: auto;
-  margin-top: 3em;
-  a {
-    color: #000;
-    text-decoration: none;
-    &:hover {
-      border-bottom-color: #000;
-    }
-  }
-}
-@media (min-width: 768px) {
-  footer,
-  .footer-nav {
-    text-align: left;
-  }
-  .footer-outer::after {
-    content: "";
-    display: block;
-    overflow: hidden;
+
+  .footer-logo {
+    width: 100px;
   }
 
   .footer-nav {
-    justify-content: flex-end;
-    height: 8em;
-    padding-top: 3em;
-    padding-bottom: 8em;
-    ul {
-      display: flex;
-      margin-right: 16px;
-      list-style: none;
-      margin-bottom: 5em;
-    }
+    display: flex;
+    justify-content: space-between;
+
     a {
-      display: inline-block;
-      padding: 16px;
-      border-bottom: 3px solid transparent;
-      transition: border-bottom 0.3s;
+      color: #000;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom-color: #000;
+      }
     }
   }
-  .copy {
-    font-size: 0.5em;
-    margin-left: auto;
-    align-self: flex-end;
-    margin-right: 6em;
+
+  @media (min-width: 768px) {
+
+    .footer-outer:after {
+      content: "";
+      display: block;
+      overflow: hidden;
+    }
+
+    .footer-nav {
+      text-align: left;
+      height: 8em;
+      padding-top: 4em;
+      padding-bottom: 8em;
+      border-top: 1px solid #ccc;
+      margin-top: 3rem;
+
+      ul {
+        display: flex;
+        list-style: none;
+        margin-bottom: 5em;
+        align-items: center;
+
+        :last-child {
+          margin-right: 0;
+        }
+      }
+
+      li {
+        display: inline-block;
+        margin: 0 10px;
+
+      }
+
+      a {
+        display: inline-block;
+        border-bottom: 3px solid transparent;
+        transition: border-bottom 0.3s;
+      }
+    }
+    .copy {
+      font-size: 0.5em;
+      display: block;
+      text-align: right;
+      margin: -3rem 0rem 2rem;
+    }
   }
-}
-@media (max-width: 480px) {
-  .copy {
-    font-size: 0.3em;
-    margin-top: 1em;
+
+  @media (max-width: 480px) {
+    .copy {
+      font-size: 0.3em;
+      margin-top: 1em;
+    }
   }
-}
 </style>
