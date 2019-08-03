@@ -25,9 +25,34 @@ h2 {
   font-weight: 900;
 }
 
-.wrap{
-  max-width: 1200px;
-  margin: 0 auto;
+.wrap {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .wrap {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrap {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrap {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrap {
+    max-width: 1140px;
+  }
 }
 .row {
   display: flex;
