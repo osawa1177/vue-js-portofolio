@@ -16,14 +16,14 @@
 </template>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
 
   .moveline {
     display: block;
     position: absolute;
     top: -100px;
     width: 1px;
-    height: 115%;
+    height: 107%;
     z-index: -2;
 
     &-block {
@@ -32,7 +32,7 @@
       top: -235px;
       left: 0;
       width: 100%;
-      height: 115%;
+      height: 107%;
       z-index: -2;
     }
 
