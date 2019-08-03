@@ -1,7 +1,6 @@
 <template>
   <div id="app">
       <hnav></hnav>
-    <moveline></moveline>
     <transition name="fade">
       <router-view :data="myData"></router-view>
     </transition>
