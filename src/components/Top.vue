@@ -1,5 +1,6 @@
 <template>
-  <div class="top">
+
+  <div>
     <moveline></moveline>
     <mainblock></mainblock>
     <ser></ser>
