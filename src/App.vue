@@ -25,16 +25,6 @@ export default {
 </script>
 
 <style>
-  body {
-    text-size-adjust: 100%;
-    font-smoothing: antialiased;
-    text-rendering: auto;
-    font-size: 15px;
-    font-family: 'Noto Sans JP', "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif;    font-weight: normal;
-    color: #1a1a1a;
-    letter-spacing: 0.02em;
-    background-color: #fff
-  }
 
   p {
     line-height: 1.9;
