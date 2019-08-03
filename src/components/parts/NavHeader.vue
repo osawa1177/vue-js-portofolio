@@ -1,10 +1,10 @@
 <template>
 
-  <div class="header-outer">
+  <div class="wrap">
     <header class="header-block">
-      <p class="site-title">
-        <router-link to="/"><img :src="imagePath"></router-link>
-      </p>
+      <h1 class="site-title">
+        <router-link to="/"><img :src="logo" alt="tomohisa.osawa-logo"></router-link>
+      </h1>
 
       <nav class="header-nav">
         <ul class="header-pc">
@@ -51,7 +51,7 @@
   export default {
     data: function () {
       return {
-        imagePath: require("../../assets/img/logo.svg")
+        logo: require("../../assets/img/logo.svg")
       };
     }
   };
@@ -85,7 +85,6 @@
     .header-block {
       display: flex;
       justify-content: space-between;
-      margin: 2rem 0;
     }
 
     .header-outer {
@@ -95,9 +94,9 @@
       height: 200px;
     }
     .site-title {
-      width: 50%;
+      width: 40%;
       margin-bottom: 0;
-      padding-top: 2em;
+      padding-top: 4em;
 
       img {
         width: 60%;
