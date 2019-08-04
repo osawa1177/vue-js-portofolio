@@ -158,34 +158,34 @@
 }
 
 .pb-1{
-  padding-botton: 1rem;
+  padding-bottom: 1rem;
 }
 .pb-2{
-  padding-botton: 2rem;
+  padding-bottom: 2rem;
 }
 .pb-3{
-  padding-botton: 3rem;
+  padding-bottom: 3rem;
 }
 .pb-4{
-  padding-botton: 5rem;
+  padding-bottom: 5rem;
 }
 .pb-5{
-  padding-botton: 5rem;
+  padding-bottom: 5rem;
 }
 .pb-6{
-  padding-botton: 6rem;
+  padding-bottom: 6rem;
 }
 .pb-7{
-  padding-botton: 7rem;
+  padding-bottom: 7rem;
 }
 .pb-8{
-  padding-botton: 8rem;
+  padding-bottom: 8rem;
 }
 .pb-9{
-  padding-botton: 9rem;
+  padding-bottom: 9rem;
 }
 .pb-10{
-  padding-botton: 10rem;
+  padding-bottom: 10rem;
 }
 
 .pr-1{
@@ -253,4 +253,20 @@
 //position
 .relative{
   position: relative;
+}
+
+//flex
+.d-flex{
+  display: flex;
+}
+.d-block{
+  display: block;
+}
+.d-inlin-block{
+  display: inline-block;
+}
+
+//border
+.dash-border {
+  border-bottom: 2px dashed #6b6b6b;
 }
