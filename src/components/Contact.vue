@@ -4,7 +4,7 @@
     <div class="sub-wrap contact relative mt-4">
       <h2>Contact</h2>
       <section class="form-block bg">
-        <h3 class="title">Contact Me</h3>
+        <h3 class="contact-title">Contact Me</h3>
         <form class="work-request ml-4" method="post" action="mail.php">
           <div class="work-request--information">
             <div class="info-name">
@@ -45,7 +45,7 @@
 
 <style lang="scss" scoped>
 
-  .title{
+  .contact-title{
     margin-left: 5rem;
     font-size: 2rem;
     font-weight: bold;
