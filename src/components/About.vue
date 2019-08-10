@@ -1,14 +1,14 @@
 <template>
   <div>
     <moveline></moveline>
-    <div class="wrap about relative mt-4 mb-5">
+    <div class="sub-wrap about relative mt-4 mb-5">
       <h2>About</h2>
       <article class="about-block">
         <section class="about-item-1">
           <h3>- 都内でフリーランスのWeb制作をしております。</h3>
           <figure><img :src="img_s"></figure>
         </section>
-        <section class="about-item-2 about-bg">
+        <section class="about-item-2 bg">
           <dl class="about-prof pl-10">
             <div class="d-flex dash-border pb-1 mb-1">
               <dt>所在地 ：</dt>
@@ -62,7 +62,7 @@
     h2 {
       writing-mode: vertical-rl;
       font-size: 2em;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid #1a1a1a;
       padding-bottom: 1em;
       font-weight: 900;
       position: absolute;
@@ -77,8 +77,7 @@
       position: absolute;
     }
 
-    .about-bg {
-      background-color: #f6f6f6;
+    .bg {
       padding: 3rem;
     }
 
@@ -104,9 +103,9 @@
 
     .about-item-2 {
       position: absolute;
-      right: 0;
-      bottom: -7%;
-      width: 70%;
+      right: -8%;
+      bottom: -14%;
+      width: 80%;
       height: 300px;
       z-index: -2;
     }

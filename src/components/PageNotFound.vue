@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrap">
         <main>
             <h1> ページが見つかりません</h1>
         </main>
