@@ -1,110 +1,190 @@
 <template>
   <section class="skills relative">
     <h2>Tool & Skills</h2>
-    <div class="wrap mt-6 mb-6">
+    <div class="wrap mt-6 mb-6 skill-wrap">
       <div class="tool-skill-block d-flex flex-wrap space-between ">
 
         <div class="tool-skill-item">
           <div class="tool-skill-img"><img :src="html"></div>
-          <div class="tool-skill-name">HTML5</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="css"></div>
-          <div class="tool-skill-name">CSS</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="photoshop">
+          <div class="chart-block">
+            <div class="chart-item chart-90" >
+            </div>
           </div>
-          <div class="tool-skill-name">Photoshop</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="illustrator">
+            <div class="tool-skill-name">HTML5</div>
           </div>
-          <div class="tool-skill-name">Illustrator</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="xd">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="css"></div>
+            <div class="chart-block">
+              <div class="chart-item chart-80" >
+              </div>
+            </div>
+            <div class="tool-skill-name">CSS</div>
           </div>
-          <div class="tool-skill-name">Adobe XD</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="javascript">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="photoshop">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-70" >
+              </div>
+            </div>
+            <div class="tool-skill-name">Photoshop</div>
           </div>
-          <div class="tool-skill-name">javascript</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="jquery">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="illustrator">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-60" >
+              </div>
+            </div>
+            <div class="tool-skill-name">Illustrator</div>
           </div>
-          <div class="tool-skill-name">jqery</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="vue">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="xd">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-80" >
+              </div>
+            </div>
+            <div class="tool-skill-name">Adobe XD</div>
           </div>
-          <div class="tool-skill-name">Vue.js</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="php">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="javascript">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-60" >
+              </div>
+            </div>
+            <div class="tool-skill-name">javascript</div>
           </div>
-          <div class="tool-skill-name">PHP</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="laravel">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="jquery">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-70" >
+              </div>
+            </div>
+            <div class="tool-skill-name">jqery</div>
           </div>
-          <div class="tool-skill-name">Laravel</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="git">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="vue">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-50" >
+              </div>
+            </div>
+            <div class="tool-skill-name">Vue.js</div>
           </div>
-          <div class="tool-skill-name">Git</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="bootstrap">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="php">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-20" >
+              </div>
+            </div>
+            <div class="tool-skill-name">PHP</div>
           </div>
-          <div class="tool-skill-name">Bootstrap</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="sass">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="laravel">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-20" >
+              </div>
+            </div>
+            <div class="tool-skill-name">Laravel</div>
           </div>
-          <div class="tool-skill-name">Scss</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="gulp">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="git">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-70" >
+              </div>
+            </div>
+            <div class="tool-skill-name">Git</div>
           </div>
-          <div class="tool-skill-name">Gulp</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="vscode">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="bootstrap">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-80" >
+              </div>
+            </div>
+            <div class="tool-skill-name">Bootstrap</div>
           </div>
-          <div class="tool-skill-name">vscode</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="intelij">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="sass">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-80" >
+              </div>
+            </div>
+            <div class="tool-skill-name">Scss</div>
           </div>
-          <div class="tool-skill-name">Intelij</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="googleanalytics">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="gulp">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-70" >
+              </div>
+            </div>
+            <div class="tool-skill-name">Gulp</div>
           </div>
-          <div class="tool-skill-name">Googleanalytics</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="seo">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="vscode">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-80" >
+              </div>
+            </div>
+            <div class="tool-skill-name">vscode</div>
           </div>
-          <div class="tool-skill-name">SEO</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="design">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="intelij">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-70" >
+              </div>
+            </div>
+            <div class="tool-skill-name">Intelij</div>
           </div>
-          <div class="tool-skill-name">UI/UXデザイン</div>
-        </div>
-        <div class="tool-skill-item">
-          <div class="tool-skill-img"><img :src="backlog">
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="googleanalytics">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-70" >
+              </div>
+            </div>
+            <div class="tool-skill-name">Googleanalytics</div>
           </div>
-          <div class="tool-skill-name">Backlog</div>
-        </div>
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="seo">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-70" >
+              </div>
+            </div>
+            <div class="tool-skill-name">SEO</div>
+          </div>
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="design">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-80" >
+              </div>
+            </div>
+            <div class="tool-skill-name">UI/UXデザイン</div>
+          </div>
+          <div class="tool-skill-item">
+            <div class="tool-skill-img"><img :src="backlog">
+            </div>
+            <div class="chart-block">
+              <div class="chart-item chart-80" >
+              </div>
+            </div>
+            <div class="tool-skill-name">Backlog</div>
+          </div>
 
+        </div>
       </div>
-    </div>
   </section>
 
 </template>
@@ -141,6 +221,58 @@
 </script>
 
 <style lang="scss" scoped>
+
+  .chart-block {
+    width: 80%;
+    height: 1em;
+    position: relative;
+    margin: 0 auto;
+    background-color: #eef3f7;
+  }
+
+  .chart-item{
+    background-color: #59b1ff;
+    left: 0;
+    position: absolute;
+    height: 1rem;
+  }
+
+  .chart-100 {
+    width: 100%;
+  }
+  .chart-90 {
+    width: 90%;
+  }
+  .chart-80 {
+    width: 80%;
+  }
+  .chart-70 {
+    width: 70%;
+  }
+  .chart-60 {
+    width: 60%;
+  }
+  .chart-50 {
+    width: 50%;
+  }
+  .chart-40 {
+    width: 40%;
+  }
+  .chart-30 {
+    width: 30%;
+  }
+  .chart-20 {
+    width: 20%;
+  }
+  .chart-10 {
+    width: 10%;
+  }
+
+
+
+  .skill-wrap {
+    max-width: 900px;
+  }
 
   .tool-skill-block {
 
@@ -187,6 +319,7 @@
   .tool-skill-name {
     line-height: 1.4;
     font-size: 0.95em;
+    margin-top: .5rem;
   }
 
   .skills {
