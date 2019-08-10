@@ -4,24 +4,7 @@
     <moveline></moveline>
     <mainblock></mainblock>
     <ser></ser>
-    <section class="works">
-      <h2>Works</h2>
-      <div class="row">
-        <figure>
-          <router-link to="/works"><img :src="img1" class="img1"></router-link>
-        </figure>
-        <figure>
-          <router-link to="/works"><img :src="img2" class="img2"></router-link>
-        </figure>
-        <figure>
-          <router-link to="/works"><img :src="img3" class="img3"></router-link>
-        </figure>
-      </div>
-      <figure class="img-ab">
-        <router-link to="/works"><img :src="img4" class="img4"></router-link>
-      </figure>
-    </section>
-
+    <works></works>
     <section class="about">
       <h2>About</h2>
       <div class="row bg">
@@ -32,79 +15,7 @@
         </ul>
       </div>
     </section>
-
-    <section class="skills">
-      <h2>Skills</h2>
-      <div class="row">
-        <div class="wrap">
-          <div id="progress" class="graph">
-            <div id="bar" style="width:88%">
-              <p>HTML5 CSS3</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:60%">
-              <p>JavaScript / Jquery</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:30%">
-              <p>PHP / Laravel </p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:35%">
-              <p>Git</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:70%">
-              <p>Bootstrap3 / 4</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:75%">
-              <p>SCSS</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:67%">
-              <p>gulp </p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:72%">
-              <p>PhpStorm / Visual Studio Code / Dreamweaver</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:82%">
-              <p>Photoshop</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:68%">
-              <p>Illustrator</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:75%">
-              <p>Adobe XD </p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:82%">
-              <p>Google Analytics / SEO</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:87%">
-              <p>backlog</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <toolskill></toolskill>
   </div>
 
 </template>
@@ -113,6 +24,7 @@
   import mainblock from "@/components/parts/Main";
   import service from "@/components/parts/Service";
   import moveline from "@/components/parts/Moveline";
+  import works from "@/components/parts/top/Works";
 
   export default {
     name: "top",
@@ -122,64 +34,15 @@
     components: {
       mainblock: mainblock,
       ser: service,
-      moveline: moveline
+      moveline: moveline,
+      works: works,
     },
-    data: function () {
-      return {
-        img1: require("../assets/img/top/image01.jpg"),
-        img2: require("../assets/img/top/image02.jpg"),
-        img3: require("../assets/img/top/image03.jpg"),
-        img4: require("../assets/img/top/image04.jpg")
-      };
-    }
+
   };
 </script>
 
 <style lang="scss" scoped>
 
-  .works {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    height: 100%;
-    padding: 3% 0 0;
-    margin-bottom: 7em;
-
-    h2 {
-      position: absolute;
-      right: 33%;
-      margin-top: -1em;
-    }
-
-    .row {
-      justify-content: space-around;
-      padding-top: 4em;
-    }
-
-    .img1 {
-      width: 78%;
-      padding-left: 1em;
-    }
-
-    .img2 {
-      width: 70%;
-    }
-
-    .img3 {
-      width: 81%;
-    }
-
-    .img4 {
-      width: 47%;
-    }
-
-    .img-ab {
-      position: absolute;
-      right: 2%;
-      bottom: -25%;
-      padding-bottom: 2em;
-    }
-  }
 
   .about {
     position: relative;
@@ -272,23 +135,6 @@
       }
     }
 
-    .works {
-      .img4 {
-        width: 75%;
-      }
-
-      .img-ab {
-        position: absolute;
-        right: 8%;
-        bottom: -60%;
-        padding-bottom: 2em;
-        margin-left: 13em;
-      }
-
-      h2 {
-        right: 29%;
-      }
-    }
     .about {
       .bg {
         margin-left: 1em;

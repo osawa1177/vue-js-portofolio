@@ -254,3 +254,37 @@
 .relative{
   position: relative;
 }
+
+//display
+.d-flex{
+  display: flex;
+}
+.d-block{
+  display: block;
+}
+.d-inlin-block{
+  display: inline-block;
+}
+
+//border
+.dash-border {
+  border-bottom: 2px dashed #6b6b6b;
+}
+
+//flex
+.space-between {
+  justify-content: space-between;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
