@@ -1,21 +1,51 @@
 <template>
   <section class="works wrap relative mt-6">
     <h2>Works</h2>
-    <div class="d-flex">
-      <figure>
-        <router-link to="/works"><img :src="img1" class="img1"></router-link>
-      </figure>
-      <figure>
-        <router-link to="/works"><img :src="img2" class="img2"></router-link>
-      </figure>
-      <figure class="text-right">
-        <router-link to="/works"><img :src="img3" class="img3"></router-link>
-      </figure>
+
+    <div class="works-block wrap">
+
+      <div class="works-col-1">
+        <div class="works-item">
+          <figure>
+            <router-link to="/works"><img :src="img1"></router-link>
+          </figure>
+        </div>
+        <div class="works-item">
+
+        </div>
+
+      </div>
+      <div class="works-col-2">
+        <div class="works-item">
+          <figure>
+            <router-link to="/works"><img :src="img4"></router-link>
+          </figure>
+        </div>
+        <div class="works-item">
+          <figure>
+            <router-link to="/works"><img :src="img2"></router-link>
+          </figure>
+        </div>
+      </div>
+
+      <div class="works-col-3">
+        <div class="works-item">
+          <figure class="text-right">
+            <router-link to="/works"><img :src="img3"></router-link>
+          </figure>
+        </div>
+        <div class="works-item">
+
+        </div>
+
+      </div>
+
+
     </div>
-    <figure class="img-ab">
-      <router-link to="/works"><img :src="img4" class="img4"></router-link>
-    </figure>
+
   </section>
+
+
 
 </template>
 
@@ -35,34 +65,41 @@
 </script>
 
 <style lang="scss" scoped>
+  .works-block {
+    display: flex;
+    min-height: 830px;
+  }
+  .works-col-1 {
+    align-self: flex-end;
+    width: 100%;
+    margin-right: 25px;
+  }
+  .works-col-2 {
+    align-self: center;
+    width: 100%;
+    margin-right: 25px;
+  }
 
+  .works-col-3 {
+    align-self: flex-start;
+    width: 100%;
+  }
+  .works-item {
+    width: 100%;
+    height: 332.5px;
+  }
 
   .works {
     height: 100%;
     padding: 3% 0 0;
-    margin-bottom: 15em;
+    margin-bottom: 5em;
 
     h2 {
       position: absolute;
-      right: 33%;
+      left: 0;
       margin-top: -1em;
     }
 
-    .img1 {
-      width: 78%;
-    }
-
-    .img2 {
-      width: 70%;
-    }
-
-    .img3 {
-      width: 81%;
-    }
-
-    .img4 {
-      width: 47%;
-    }
 
     .img-ab {
       position: absolute;
