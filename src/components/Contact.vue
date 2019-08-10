@@ -4,6 +4,7 @@
     <div class="sub-wrap contact relative mt-4">
       <h2>Contact</h2>
       <section class="form-block bg">
+        <h3 class="title">Contact Me</h3>
         <form class="work-request ml-4" method="post" action="mail.php">
           <div class="work-request--information">
             <div class="info-name">
@@ -24,6 +25,8 @@
           </div>
         </form>
       </section>
+
+
     </div>
   </div>
 </template>
@@ -42,6 +45,12 @@
 
 <style lang="scss" scoped>
 
+  .title{
+    margin-left: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
   .moveline {
     height: 138%;
 
@@ -50,8 +59,9 @@
     }
   }
 
-  .form-block{
-    padding: 3rem 0rem 2rem;  }
+  .form-block {
+    padding: 3rem 0rem 2rem;
+  }
 
   .contact {
     h2 {
@@ -119,7 +129,7 @@
     }
   }
 
-  .textarea{
+  .textarea {
     flex-basis: 70%;
   }
 
