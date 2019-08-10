@@ -255,7 +255,7 @@
   position: relative;
 }
 
-//flex
+//display
 .d-flex{
   display: flex;
 }
@@ -269,4 +269,12 @@
 //border
 .dash-border {
   border-bottom: 2px dashed #6b6b6b;
+}
+
+//flex
+.space-between {
+  justify-content: space-between;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }

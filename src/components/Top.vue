@@ -33,78 +33,8 @@
       </div>
     </section>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <div class="row">
-        <div class="wrap">
-          <div id="progress" class="graph">
-            <div id="bar" style="width:88%">
-              <p>HTML5 CSS3</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:60%">
-              <p>JavaScript / Jquery</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:30%">
-              <p>PHP / Laravel </p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:35%">
-              <p>Git</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:70%">
-              <p>Bootstrap3 / 4</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:75%">
-              <p>SCSS</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:67%">
-              <p>gulp </p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:72%">
-              <p>PhpStorm / Visual Studio Code / Dreamweaver</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:82%">
-              <p>Photoshop</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:68%">
-              <p>Illustrator</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:75%">
-              <p>Adobe XD </p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:82%">
-              <p>Google Analytics / SEO</p>
-            </div>
-          </div>
-          <div id="progress" class="graph">
-            <div id="bar" style="width:87%">
-              <p>backlog</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <toolskill></toolskill>
+
   </div>
 
 </template>
@@ -113,6 +43,7 @@
   import mainblock from "@/components/parts/Main";
   import service from "@/components/parts/Service";
   import moveline from "@/components/parts/Moveline";
+  import toolskill from "@/components/parts/ToolSkill";
 
   export default {
     name: "top",
@@ -122,7 +53,8 @@
     components: {
       mainblock: mainblock,
       ser: service,
-      moveline: moveline
+      moveline: moveline,
+      toolskill: toolskill,
     },
     data: function () {
       return {
@@ -183,7 +115,6 @@
 
   .about {
     position: relative;
-    height: 23vh;
 
     h2 {
       position: absolute;
@@ -217,45 +148,6 @@
     }
   }
 
-  .skills {
-    padding-top: 7vh;
-    height: 100%;
-    position: relative;
-
-    .graph {
-      width: 100%;
-      height: 30px;
-      border: none;
-      background: rgb(233, 233, 233);
-      position: relative;
-      margin-bottom: 1.5em;
-    }
-
-    #bar {
-      height: 29px;
-      background: #b2e9ff;
-    }
-
-    p {
-      position: absolute;
-      color: #fff;
-      margin: 0;
-      line-height: 30px;
-      padding-left: 1em;
-    }
-
-    .wrap {
-      width: 63%;
-      margin: 0 auto;
-      margin-top: 11em;
-    }
-
-    h2 {
-      position: absolute;
-      top: 21%;
-      right: 12%;
-    }
-  }
 
   @media (max-width: 480px) {
     .main {
@@ -299,14 +191,6 @@
         padding: 0;
       }
     }
-    .skills {
-      h2 {
-        position: absolute;
-        top: 3%;
-        right: 7%;
-        z-index: 3;
-      }
 
-    }
   }
 </style>
