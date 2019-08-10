@@ -100,7 +100,7 @@
     .copy {
       font-size: 0.5em;
       display: block;
-      text-align: right;
+      text-align: center;
       margin: -3rem 0rem 2rem;
     }
   }

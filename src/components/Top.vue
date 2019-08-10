@@ -16,6 +16,7 @@
       </div>
     </section>
     <toolskill></toolskill>
+
   </div>
 
 </template>
@@ -25,6 +26,7 @@
   import service from "@/components/parts/Service";
   import moveline from "@/components/parts/Moveline";
   import works from "@/components/parts/top/Works";
+  import toolskill from "@/components/parts/ToolSkill";
 
   export default {
     name: "top",
@@ -36,6 +38,7 @@
       ser: service,
       moveline: moveline,
       works: works,
+      toolskill: toolskill,
     },
 
   };
@@ -46,7 +49,6 @@
 
   .about {
     position: relative;
-    height: 23vh;
 
     h2 {
       position: absolute;
@@ -80,45 +82,6 @@
     }
   }
 
-  .skills {
-    padding-top: 7vh;
-    height: 100%;
-    position: relative;
-
-    .graph {
-      width: 100%;
-      height: 30px;
-      border: none;
-      background: rgb(233, 233, 233);
-      position: relative;
-      margin-bottom: 1.5em;
-    }
-
-    #bar {
-      height: 29px;
-      background: #b2e9ff;
-    }
-
-    p {
-      position: absolute;
-      color: #fff;
-      margin: 0;
-      line-height: 30px;
-      padding-left: 1em;
-    }
-
-    .wrap {
-      width: 63%;
-      margin: 0 auto;
-      margin-top: 11em;
-    }
-
-    h2 {
-      position: absolute;
-      top: 21%;
-      right: 12%;
-    }
-  }
 
   @media (max-width: 480px) {
     .main {
@@ -145,14 +108,6 @@
         padding: 0;
       }
     }
-    .skills {
-      h2 {
-        position: absolute;
-        top: 3%;
-        right: 7%;
-        z-index: 3;
-      }
 
-    }
   }
 </style>

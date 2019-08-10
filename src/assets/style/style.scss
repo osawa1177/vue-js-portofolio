@@ -20,9 +20,13 @@ h2 {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-size: 2em;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #1a1a1a;
   padding-bottom: 1em;
   font-weight: 900;
+}
+
+img {
+  width: 100%;
 }
 
 #app{
@@ -81,9 +85,6 @@ ul {
   padding: 0;
 }
 
-a {
-  color: #42b983;
-}
 /** v-cloak */
 [v-cloak] {
   display: none;
