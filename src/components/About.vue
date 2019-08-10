@@ -5,27 +5,36 @@
       <h2>About</h2>
       <article class="about-block">
         <section class="about-item-1">
-          <h3>- 都内でフリーランスのWeb制作をしております。</h3>
-          <figure><img :src="img_s"></figure>
+          <figure class="about-item-1-figure"><img :src="about"></figure>
+          <p class="about-text">開業以来、プロジェクトと向き合い妥協のない仕事をしてきました。<br>
+            コーポレートサイト、ECサイト,検索サイト、ランディングページなど様々な、WEBづくりに関するあらゆることにお答えできる経験があります。
+            。お客様とたくさん話をして、たくさんのアイデアで一緒に夢をカタチにするお手伝いをしています。</p>
         </section>
-        <section class="about-item-2 bg">
-          <dl class="about-prof pl-10">
-            <div class="d-flex dash-border pb-1 mb-1">
-              <dt>所在地 ：</dt>
-              <dd>東京都</dd>
-            </div>
-            <div class="d-flex dash-border pb-1 mb-1">
-              <dt>お問い合わせ ：</dt>
-              <dd>http://tomozo.atumari.net</dd>
-            </div>
-            <div class="d-flex">
-              <dt>事業内容 ：</dt>
-              <dd>Web制作におけるディレクション、デザイン、
-                <br>HTML・CSSコーディング、スマートフォンサイト制作等
-              </dd>
-            </div>
+        <section class="about-item">
+          <h3>- 都内にてフリーランスのWEB制作をしております。</h3>
+
+          <dl class="pt-2">
+            <dt>社　名</dt>
+            <dd>Still Good Design</dd>
+            <dt>所在地</dt>
+            <dd>東京都葛飾区高砂2丁目</dd>
+            <dt>創　業</dt>
+            <dd>2018年9月</dd>
+            <dt>事業内容</dt>
+            <dd>WEBの企画・提案・設計・デザイン・監理・製作</dd>
+            <dt>WEB</dt>
+            <dd>http://osawa-tomohisa.under.jp</dd>
+            <dt>MAIL</dt>
+            <dd>info@stillgooddesign.jp</dd>
           </dl>
+
+
         </section>
+
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12952.36749396684!2d139.85734573546537!3d35.74854654773144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1565456811972!5m2!1sja!2sjp"
+          width="1000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </article>
     </div>
   </div>
@@ -42,13 +51,81 @@
     },
     data: function () {
       return {
-        img_s: require("../assets/img/img_s.jpg")
+        about: require("@/assets/img/about/about.png")
       };
     }
   };
 </script>
 
 <style lang="scss" scoped>
+  iframe {
+    filter: grayscale(100%);
+  }
+
+  iframe:hover {
+    　transition: filter 0.8s ease;
+    　filter: grayscale(0) saturate(2);
+  }
+
+  .about-item-1 {
+    &-figure {
+      width: 60%;
+      margin: 0 auto 4rem;
+    }
+  }
+
+  .about-text{
+    width: 64%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+
+  .about-item {
+    width: 100%;
+    margin: 2rem auto 5rem;
+
+
+    .about-item dt:first-of-type, .about-item dd:first-of-type {
+      border-top: 1px solid #000;
+    }
+
+    dt {
+      width: 20%;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 1px;
+      float: left;
+      padding: 20px 0;
+      border-top: 1px solid #e7e7e7;
+
+      &:first-of-type {
+        border-top: 1px solid #000;
+      }
+
+      &:first-of-type {
+        border-top: 1px solid #000;
+      }
+    }
+
+
+    dd {
+      width: 80%;
+      margin-left: 20%;
+      border-left: 1px solid #e7e7e7;
+      padding: 20px 40px;
+      border-top: 1px solid #e7e7e7;
+
+      &:first-of-type {
+        border-top: 1px solid #000;
+      }
+
+      &:first-of-type {
+        border-top: 1px solid #000;
+      }
+    }
+
+  }
+
 
   .moveline {
     height: 132%;
@@ -70,64 +147,15 @@
       top: 0%;
     }
 
-    h3{
+    h3 {
       font-size: 1.5rem;
       font-weight: 600;
       letter-spacing: 3px;
-      position: absolute;
     }
 
-    .bg {
-      padding: 3rem;
-    }
 
-    .about-prof {
-      margin-bottom: 2em;
-      line-height: 2.2;
-
-      dt {
-        width: 22%;
-        font-weight: bold;
-      }
-
-      dd {
-        font-size: 1em;
-
-      }
-
-    }
-
-    .about-item-1 {
-      width: 40%;
-    }
-
-    .about-item-2 {
-      position: absolute;
-      right: -8%;
-      bottom: -14%;
-      width: 80%;
-      height: 300px;
-      z-index: -2;
-    }
-
-    figure img {
-      width: 100%;
-      margin: 4em 0 2rem;
-    }
-
-    .about-block {
-      margin-left: 5em;
-      display: flex;
-    }
   }
 
-  .wrapper {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 3em;
-    margin-bottom: 9em;
-  }
 
   @media (max-width: 480px) {
     .about {
