@@ -15,9 +15,15 @@ body {
   background-color: #fff
 }
 
+h1 {
+  font-size: 3em;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  padding-top: 2em;
+  text-shadow: 1px 1px 2px white;
+}
+
 h2 {
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-size: 2em;
   border-bottom: 1px solid #1a1a1a;
@@ -66,18 +72,9 @@ img {
 .row {
   display: flex;
 }
-.justify-content-around{
-  justify-content: space-around;
-}
-.bg {
-  background-color: #f6f6f6;
-}
-h1 {
-  font-size: 3em;
-  margin-top: -1em;
-  margin-bottom: 1em;
-  padding-top: 2em;
-  text-shadow: 1px 1px 2px white;
+
+.bg{
+background: linear-gradient(45deg, #f7fcff,#edf2f7);
 }
 
 ul {

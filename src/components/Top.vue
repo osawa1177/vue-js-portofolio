@@ -5,16 +5,7 @@
     <mainblock></mainblock>
     <ser></ser>
     <works></works>
-    <section class="about">
-      <h2>About</h2>
-      <div class="row bg">
-        <ul>
-          <li> 事業形態 : 個人事業主</li>
-          <li> 事業内容 : WEBサイト制作</li>
-          <li> 所在地 : 東京都</li>
-        </ul>
-      </div>
-    </section>
+    <about></about>
     <toolskill></toolskill>
 
   </div>
@@ -26,63 +17,28 @@
   import service from "@/components/parts/Service";
   import moveline from "@/components/parts/Moveline";
   import works from "@/components/parts/top/Works";
+  import about from "@/components/parts/top/About";
   import toolskill from "@/components/parts/ToolSkill";
 
   export default {
     name: "top",
     title: "Top", // title 追加
-    description: " tomohisa ohsawaのポートフォリオサイト", // description 追加
+    description: " tomohisa ohsawaのポートフォリオサイト",
     props: ["data"],
+
     components: {
       mainblock: mainblock,
       ser: service,
       moveline: moveline,
       works: works,
+      about: about,
       toolskill: toolskill,
-    },
+    }
 
   };
 </script>
 
 <style lang="scss" scoped>
-
-
-  .about {
-    position: relative;
-
-    h2 {
-      position: absolute;
-      left: 10%;
-      top: -22%;
-    }
-
-    .bg {
-      margin-left: 4em;
-      margin-top: 11em;
-    }
-
-    ul {
-      width: 100%;
-      text-align: center;
-      padding: 3em 0;
-
-      li {
-        display: block;
-        height: 1em;
-        padding: 2em 0 2em;
-
-        &:last-child {
-          padding-bottom: 4em;
-        }
-
-        &:first-child {
-          padding-top: 4em;
-        }
-      }
-    }
-  }
-
-
   @media (max-width: 480px) {
     .main {
       background: url(/static/img/main.ad3ebec.jpg) no-repeat;
@@ -95,17 +51,6 @@
 
       .title {
         margin-left: -3em;
-      }
-    }
-
-    .about {
-      .bg {
-        margin-left: 1em;
-        margin-top: 9em;
-      }
-
-      ul {
-        padding: 0;
       }
     }
 
