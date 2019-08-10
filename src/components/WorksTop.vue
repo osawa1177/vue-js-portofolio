@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <moveline></moveline>
-    <div class="wrap work-stop mt-4 relative">
+    <div class="sub-wrap work-stop mt-4 relative">
       <h2>Works</h2>
       <article>
         <section>

@@ -1,9 +1,9 @@
 <template>
   <div>
     <moveline></moveline>
-    <div class="wrap contact relative mt-4">
+    <div class="sub-wrap contact relative mt-4">
       <h2>Contact</h2>
-      <section class="form-block">
+      <section class="form-block bg">
         <form class="work-request ml-4" method="post" action="mail.php">
           <div class="work-request--information">
             <div class="info-name">
@@ -51,9 +51,7 @@
   }
 
   .form-block{
-    background-color: #f6f6f6;
-    padding: 4rem 3rem;
-  }
+    padding: 3rem 0rem 2rem;  }
 
   .contact {
     h2 {
@@ -130,7 +128,6 @@
     background-color: #409eff;
     border-color: #409eff;
     border: none;
-    display: inline-block;
     line-height: 1;
     white-space: nowrap;
     cursor: pointer;
@@ -138,7 +135,6 @@
     text-align: center;
     box-sizing: border-box;
     outline: 0;
-    margin: 0;
     transition: 0.1s;
     font-weight: 500;
     padding: 20px 100px;
