@@ -18,11 +18,11 @@
   import moveline from "@/components/parts/Moveline";
   import works from "@/components/parts/top/Works";
   import about from "@/components/parts/top/About";
-  import toolskill from "@/components/parts/ToolSkill";
+  import toolskill from "@/components/parts/top/ToolSkill";
 
   export default {
     name: "top",
-    title: "Top", // title 追加
+    title: "Top",
     description: " tomohisa ohsawaのポートフォリオサイト",
     props: ["data"],
 
