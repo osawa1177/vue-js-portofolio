@@ -40,12 +40,10 @@
     position: relative;
 
     .bg {
-      margin-right: 3em;
       margin-top: 5em;
       height: 100%;
       padding: 3% 0 0;
       align-items: center;
-      background-color: #f6f6f6;
     }
 
     h2 {
