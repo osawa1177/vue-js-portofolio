@@ -59,8 +59,12 @@
 
 <style lang="scss" scoped>
 
+  .router-link-exact-active {
+    border-bottom: 3px solid #1390ff;
+  }
+
   a {
-    color: #373737;
+    color: #1a1a1a;
 
     &:hover {
       text-decoration: none;
@@ -69,11 +73,11 @@
 
   .header-nav {
     a {
-      color: #373737;
+      color: #1a1a1a;
       text-decoration: none;
 
       &:hover {
-        border-bottom-color: #373737;
+        border-bottom-color: #1390ff;
         transition: background-color 0.5s, color 0.5s, border 0.5s;
 
       }
@@ -87,12 +91,6 @@
       justify-content: space-between;
     }
 
-    .header-outer {
-      margin-bottom: 1em;
-      max-width: 1200px;
-      margin: 0 auto;
-      height: 200px;
-    }
     .site-title {
       width: 40%;
       margin-bottom: 0;
@@ -105,7 +103,8 @@
       }
 
       a {
-        color: #000;
+        color: #1a1a1a;
+        border: none;
         &:hover {
           text-decoration: none;
         }
@@ -128,7 +127,6 @@
       a {
         display: inline-block;
         padding: 16px;
-        border-bottom: 3px solid transparent;
         transition: border-bottom 0.3s;
       }
     }

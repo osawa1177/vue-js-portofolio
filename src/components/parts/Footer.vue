@@ -49,11 +49,13 @@
     justify-content: space-between;
 
     a {
-      color: #000;
+      color: #1a1a1a;
       text-decoration: none;
+      padding-bottom: .5rem;
 
       &:hover {
-        border-bottom-color: #000;
+        border-bottom-color: #1390ff;
+        padding-bottom: .5rem;
       }
     }
   }
