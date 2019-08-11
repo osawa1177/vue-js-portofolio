@@ -1,7 +1,6 @@
 <template>
 
   <div>
-    <moveline></moveline>
     <mainblock></mainblock>
     <ser></ser>
     <works></works>
@@ -15,7 +14,6 @@
 <script>
   import mainblock from "@/components/parts/Main";
   import service from "@/components/parts/Service";
-  import moveline from "@/components/parts/Moveline";
   import works from "@/components/parts/top/Works";
   import about from "@/components/parts/top/About";
   import toolskill from "@/components/parts/top/ToolSkill";
@@ -29,7 +27,6 @@
     components: {
       mainblock: mainblock,
       ser: service,
-      moveline: moveline,
       works: works,
       about: about,
       toolskill: toolskill,

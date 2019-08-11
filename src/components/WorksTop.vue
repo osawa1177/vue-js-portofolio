@@ -1,6 +1,5 @@
 <template lang="html">
   <div>
-    <moveline></moveline>
     <div class="sub-wrap work-stop mt-4 relative">
       <h2>Works</h2>
       <article>
@@ -45,21 +44,17 @@
   </div>
 </template>
 <script>
-  import moveline from "@/components/parts/Moveline";
-
   export default {
     title: "works",
     description: "Worksトップページ",
     props: ["data"],
-    components: {
-      moveline: moveline
-    },
+
     data: function () {
       return {
-        geechs01: require("../assets/img/works/geechs01.png"),
-        pop01: require("../assets/img/works/pop01.jpg"),
-        fuyu01: require("../assets/img/works/fuyu01.jpg"),
-        pop02: require("../assets/img/works/pop02.jpg")
+        geechs01: require("@/assets/img/works/geechs01.png"),
+        pop01: require("@/assets/img/works/pop01.jpg"),
+        fuyu01: require("@/assets/img/works/fuyu01.jpg"),
+        pop02: require("@/assets/img/works/pop02.jpg")
       };
     }
   };

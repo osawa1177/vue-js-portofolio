@@ -29,7 +29,6 @@
     &-block {
       overflow: hidden;
       position: absolute;
-      top: -235px;
       left: 0;
       width: 100%;
       height: 107%;

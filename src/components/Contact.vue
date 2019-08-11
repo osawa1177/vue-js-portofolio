@@ -1,6 +1,5 @@
 <template>
   <div>
-    <moveline></moveline>
     <div class="sub-wrap contact relative mt-4">
       <h2>Contact</h2>
       <section class="form-block bg">
@@ -31,15 +30,11 @@
   </div>
 </template>
 <script>
-  import moveline from "@/components/parts/Moveline";
 
   export default {
     title: "Contact",
     description: "コンタクトページ",
     props: ["data"],
-    components: {
-      moveline: moveline
-    },
   };
 </script>
 
@@ -51,13 +46,7 @@
     font-weight: bold;
     margin-bottom: 3rem;
   }
-  .moveline {
-    height: 138%;
 
-    &-block {
-      height: 138%;
-    }
-  }
 
   .form-block {
     padding: 3rem 0rem 2rem;
