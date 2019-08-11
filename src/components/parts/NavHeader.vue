@@ -51,7 +51,7 @@
   export default {
     data: function () {
       return {
-        logo: require("../../assets/img/logo.svg")
+        logo: require("@/assets/img/logo.svg")
       };
     }
   };

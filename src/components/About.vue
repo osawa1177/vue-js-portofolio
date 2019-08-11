@@ -1,6 +1,5 @@
 <template>
   <div>
-    <moveline></moveline>
     <div class="sub-wrap about relative mt-4 mb-5">
       <h2>About</h2>
       <article class="about-block">
@@ -8,7 +7,7 @@
           <figure class="about-item-1-figure"><img :src="about"></figure>
           <p class="about-text">開業以来、プロジェクトと向き合い妥協のない仕事をしてきました。<br>
             コーポレートサイト、ECサイト,検索サイト、ランディングページなど様々な、WEBづくりに関するあらゆることにお答えできる経験があります。
-            。お客様とたくさん話をして、たくさんのアイデアで一緒に夢をカタチにするお手伝いをしています。</p>
+            お客様とたくさん話をして、たくさんのアイデアで一緒に夢をカタチにするお手伝いをしています。</p>
         </section>
         <section class="about-item">
           <h3>- 都内にてフリーランスのWEB制作をしております。</h3>
@@ -27,10 +26,7 @@
             <dt>MAIL</dt>
             <dd>info@stillgooddesign.jp</dd>
           </dl>
-
-
         </section>
-
 
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12952.36749396684!2d139.85734573546537!3d35.74854654773144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1565456811972!5m2!1sja!2sjp"
@@ -40,15 +36,12 @@
   </div>
 </template>
 <script>
-  import moveline from "@/components/parts/Moveline";
 
   export default {
     title: "about",
     description: "アバウトページ",
     props: ["data"],
-    components: {
-      moveline: moveline
-    },
+
     data: function () {
       return {
         about: require("@/assets/img/about/about.png")
@@ -63,7 +56,7 @@
   }
 
   iframe:hover {
-    　transition: filter 0.8s ease;
+    　transition: filter 0.6s ease;
     　filter: grayscale(0) saturate(2);
   }
 
@@ -78,6 +71,7 @@
     width: 64%;
     margin: 0 auto;
     padding-bottom: 3rem;
+    line-height: 1.9;
   }
 
   .about-item {
@@ -126,15 +120,6 @@
 
   }
 
-
-  .moveline {
-    height: 132%;
-
-    &-block {
-      height: 132%;
-    }
-  }
-
   .about {
     h2 {
       writing-mode: vertical-rl;
@@ -153,9 +138,7 @@
       letter-spacing: 3px;
     }
 
-
   }
-
 
   @media (max-width: 480px) {
     .about {
