@@ -30,17 +30,3 @@
   };
 </script>
 
-<style>
-
-  p {
-    line-height: 1.9;
-    text-align: justify
-  }
-
-  a {
-    text-decoration: none
-  }
-
-
-</style>
-
