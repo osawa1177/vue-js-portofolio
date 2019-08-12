@@ -2,7 +2,7 @@
   <section class="skills relative wrap">
     <h2>Tool & Skills</h2>
     <div class="wrap mt-6 mb-6 skill-wrap">
-      <div class="tool-skill-block d-flex flex-wrap space-between ">
+      <div class="tool-skill-block d-flex flex-wrap justify-content-between">
 
         <div class="tool-skill-item">
           <div class="tool-skill-img"><img :src="html"></div>
