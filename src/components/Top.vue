@@ -1,14 +1,11 @@
 <template>
-
-  <div>
+  <main>
     <mainblock></mainblock>
     <ser></ser>
     <works></works>
     <about></about>
     <toolskill></toolskill>
-
-  </div>
-
+  </main>
 </template>
 
 <script>
