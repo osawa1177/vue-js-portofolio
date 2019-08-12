@@ -1,15 +1,13 @@
 <template>
-  <section>
     <transition name="fade">
-      <div class="wrap relative">
+      <section class="wrap relative">
         <h2 class="title">portfolio</h2>
         <div class="round-animation">
           <img class="img-center topBottom" :src="mainImage">
           <img :src="html">
         </div>
-      </div>
+      </section>
     </transition>
-  </section>
 </template>
 
 <script>

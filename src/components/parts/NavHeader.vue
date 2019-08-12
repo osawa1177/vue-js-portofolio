@@ -1,9 +1,9 @@
 <template>
 
-  <div class="wrap">
-    <header class="header-block">
+  <header :class="hiddenClass" class="header-visible">
+    <div class="wrap d-flex justify-content-between">
       <h1 class="site-title">
-        <router-link to="/"><img :src="logo" alt="tomohisa.osawa-logo"></router-link>
+        <router-link to="/"><img :src="logo" alt="tomohisa.osawa-logo" class=""></router-link>
       </h1>
 
       <nav class="header-nav">
@@ -43,21 +43,62 @@
           </div>
         </div>
       </nav>
-    </header>
-  </div>
+    </div>
+  </header>
 </template>
 
 <script>
   export default {
+
     data: function () {
       return {
-        logo: require("@/assets/img/logo.svg")
+        logo: require("@/assets/img/logo.svg"),
+        hiddenClass: {},
       };
+    },
+
+    mounted() {
+      window.addEventListener('scroll' , this.handleScroll);
+    },
+    destroyed() {
+      window.removeEventListener('scroll' , this.handleScroll);
+    },
+
+    methods: {
+      handleScroll() {
+        const title = document.querySelector(' .header-visible');
+        const rect = title.getBoundingClientRect().top;
+
+        this.targetRect = rect;
+
+        if(this.targetRect >= 0){
+          this.$set(this.hiddenClass, 'hidden', '');
+        }else {
+          this.$set(this.hiddenClass, 'hidden', ' ');
+        }
+      }
     }
+
   };
 </script>
 
 <style lang="scss" scoped>
+
+  header {
+    width: 100%;
+    z-index: 3;
+  }
+
+  .sticky {
+    background: rgba(200, 200, 200, 1);
+    text-align: left;
+    text-shadow: 0px 1px 2px #777;
+    color: white;
+    font-size: 2rem;
+    padding-left: 10px;
+    height: 4rem;
+    line-height: 4rem;
+  }
 
   .router-link-exact-active {
     border-bottom: 3px solid #1390ff;
@@ -84,56 +125,49 @@
     }
   }
 
-  @media (min-width: 768px) {
+  .site-title {
+    width: 40%;
+    margin-bottom: 0;
+    padding-top: 4em;
+    font-size: 10px;
+    display: block;
 
-    .header-block {
-      display: flex;
-      justify-content: space-between;
+    img {
+      width: 60%;
     }
 
-    .site-title {
-      width: 40%;
-      margin-bottom: 0;
-      padding-top: 4em;
-      font-size: 10px;
-      display: block;
+    a {
+      color: #1a1a1a;
+      border: none;
 
-      img {
-        width: 60%;
+      &:hover {
+        text-decoration: none;
       }
-
-      a {
-        color: #1a1a1a;
-        border: none;
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-
-    header
-    .header-nav {
-      text-align: left;
-    }
-
-    .header-nav {
-      ul {
-        display: flex;
-        margin-right: 16px;
-        list-style: none;
-        padding-top: 1.5em;
-      }
-
-      a {
-        display: inline-block;
-        padding: 16px;
-        transition: border-bottom 0.3s;
-      }
-    }
-    .header-sp {
-      display: none;
     }
   }
+
+  .header-nav {
+    text-align: left;
+  }
+
+  .header-nav {
+    ul {
+      display: flex;
+      list-style: none;
+      padding-top: 1.5em;
+    }
+
+    a {
+      display: inline-block;
+      padding: 16px;
+      transition: border-bottom 0.3s;
+    }
+  }
+
+  .header-sp {
+    display: none;
+  }
+
 
   @media (max-width: 480px) {
 
