@@ -4,6 +4,8 @@
       <h2>Works</h2>
       <article>
         <section>
+          <figure class="work-img"><img :src="worksmain"></figure>
+          <p class="work-text">- これまでに携わった様々な作品を掲載しています -</p>
           <figure>
             <img :src="geechs01">
           </figure>
@@ -51,6 +53,7 @@
 
     data: function () {
       return {
+        worksmain: require("@/assets/img/works/main.png"),
         geechs01: require("@/assets/img/works/geechs01.png"),
         pop01: require("@/assets/img/works/pop01.jpg"),
         fuyu01: require("@/assets/img/works/fuyu01.jpg"),
@@ -61,6 +64,20 @@
 </script>
 
 <style lang="scss" scoped>
+
+  .work-img{
+    width: 80%;
+    margin: 0 auto 2rem;
+  }
+
+  .work-text{
+    width: 64%;
+    margin: 0 auto 4rem;
+    padding-bottom: 3rem;
+    line-height: 1.9;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 
   .work-stop {
     h2 {
