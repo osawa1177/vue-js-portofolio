@@ -100,9 +100,6 @@
         font-size: .7em;
       }
 
-      .bg {
-        margin-right: 1em;
-      }
     }
   }
 </style>

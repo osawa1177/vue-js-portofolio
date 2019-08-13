@@ -46,6 +46,12 @@ img {
   margin-left: auto;
 }
 
+@media (max-width: 480px) {
+  .wrap {
+    max-width: 90%;
+  }
+}
+
 @media (min-width: 576px) {
   .wrap {
     max-width: 540px;

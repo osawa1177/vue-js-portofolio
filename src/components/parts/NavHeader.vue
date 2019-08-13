@@ -40,6 +40,9 @@
                 <router-link to="/about">About</router-link>
               </li>
               <li>
+                <a href="http://osawa-tomohisa.under.jp/blog">Blog</a>
+              </li>
+              <li>
                 <router-link to="/contact">Contact</router-link>
               </li>
             </ul>
@@ -183,14 +186,21 @@
       font-size: 1rem;
     }
 
-    .header-pc {
+   .header-nav .header-pc {
       display: none;
     }
+    .header-nav .header-sp {
+      display: block;
+    }
+
+    .header-nav ul{
+      flex-wrap: wrap;
+    }
+
     .header-sp {
       #ham-menu {
         background-color: #fff; /*メニュー背景色*/
         box-sizing: border-box;
-        height: 40%;
         padding: 10px 40px; /*メニュー内左右上下余白*/
         position: fixed;
         right: -200px; /*メニュー横幅 width と合わせる*/
@@ -235,7 +245,6 @@
         width: 50px; /*アイコン横幅*/
         transition: all 0.3s linear 0s; /*0.3s はアニメーションにかかる時間*/
         z-index: 1000;
-        margin-top: 0.2em;
       }
 
       #menu-cb {

@@ -349,12 +349,6 @@
 
     .skills {
 
-      h2 {
-        position: absolute;
-        top: 3%;
-        right: 7%;
-        z-index: 3;
-      }
 
     }
 

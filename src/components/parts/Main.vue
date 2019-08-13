@@ -121,5 +121,11 @@
     }
   }
 
+  @media (max-width: 480px) {
+    .round-animation {
+      width: 80%;
+    }
+  }
+
 
 </style>

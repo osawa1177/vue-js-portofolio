@@ -121,10 +121,16 @@
         padding-bottom: 2em;
         margin-left: 13em;
       }
-
-      h2 {
-        right: 29%;
-      }
     }
+
+    .works-block{
+     min-height: 350px;
+    }
+
+    .works-item{
+     height: 100px;
+    }
+
+
   }
 </style>
