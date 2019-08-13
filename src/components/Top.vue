@@ -5,7 +5,6 @@
     <works></works>
     <about></about>
     <toolskill></toolskill>
-    <go-top></go-top>
   </main>
 </template>
 
@@ -15,7 +14,6 @@
   import works from "@/components/parts/top/Works";
   import about from "@/components/parts/top/About";
   import toolskill from "@/components/parts/top/ToolSkill";
-  import GoTop from '@inotom/vue-go-top';
 
   export default {
     name: "top",
@@ -29,18 +27,12 @@
       works: works,
       about: about,
       toolskill: toolskill,
-      GoTop
     }
 
   };
 </script>
 
 <style lang="scss" scoped>
-  .vue-go-top{
-    background-color: #1390ff!important;
-    outline: none;
-  }
-
 
   @media (max-width: 480px) {
     .main {
