@@ -5,7 +5,7 @@
 
       <section class="education-wrap mt-8 mb-3">
         <div class="education">
-          <div class="education-box"><span class="education-date"> <span>2011 - 2014</span> </span>
+          <div class="education-box"><span class="education-date"> <span> - 2014</span> </span>
             <h3> 職業訓練校 </h3>
             <p>職業訓練校にてPCの基礎と資格を取得し、Web制作における基礎を学ぶ。<br>
               (Webクリエイター能力認定試験)</p>
