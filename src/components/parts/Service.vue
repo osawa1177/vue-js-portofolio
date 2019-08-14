@@ -1,21 +1,21 @@
 <template>
-  <section class="service ">
+  <section class="service mt-6">
     <h2>Service</h2>
     <div class="bg">
       <div class="wrap row justify-content-around">
         <div class="col">
           <figure class="figure-block"><img :src="icon1" class="figure-block-item"></figure>
-          <h3>ディレクション</h3>
+          <h3>Direction</h3><span>ディレクション</span>
           <p>お客様の要望をヒアリングし、現状の問題点を洗い出し、ベストなプランを提案します。</p>
         </div>
         <div class="col">
           <figure class="figure-block"><img :src="icon2" class="figure-block-item"></figure>
-          <h3>デザイン</h3>
+          <h3>Design</h3><span>デザイン</span>
           <p>使う人にわかりやすくを常に意識して、使う人が迷わない、UI・UXを心がけています。</p>
         </div>
         <div class="col">
           <figure class="figure-block"><img :src="icon3" class="figure-block-item"></figure>
-          <h3>コーディング</h3>
+          <h3>Coding</h3><span>コーディング</span>
           <p>Javascript（jQuery. vue.js）を使用した動きのあるサイトやSPAなど様々なサイトコーディングを行っております。</p>
         </div>
       </div>
@@ -39,17 +39,10 @@
   .service {
     position: relative;
 
-    .bg {
-      margin-top: 5em;
-      height: 100%;
-      padding: 3% 0 0;
-      align-items: center;
-    }
-
     h2 {
       writing-mode: vertical-rl;
       font-size: 2em;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid #1a1a1a;
       padding-bottom: 1em;
       font-weight: 900;
       position: absolute;
@@ -75,13 +68,22 @@
     h3 {
       text-align: center;
       padding-bottom: .5em;
-      padding-top: 1em;
-      font-size: 1.2rem;
+      padding-top: .5em;
+      font-size: 1.7rem;
       font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    span {
+      text-align: center;
+      display: block;
+      margin-bottom: .8rem;
+      color: #a8a8a8;
     }
 
     p {
       line-height: 1.65;
+      color: #4B4B4B;
     }
   }
 

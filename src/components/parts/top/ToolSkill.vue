@@ -75,6 +75,15 @@
           <div class="tool-skill-name">Vue.js</div>
         </div>
         <div class="tool-skill-item">
+          <div class="tool-skill-img"><img :src="wordpress">
+          </div>
+          <div class="chart-block">
+            <div class="chart-item chart-60">
+            </div>
+          </div>
+          <div class="tool-skill-name">Wordpress</div>
+        </div>
+        <div class="tool-skill-item">
           <div class="tool-skill-img"><img :src="php">
           </div>
           <div class="chart-block">
@@ -108,7 +117,7 @@
             <div class="chart-item chart-80">
             </div>
           </div>
-          <div class="tool-skill-name">Bootstrap</div>
+          <div class="tool-skill-name">Bootstrap 3 / 4</div>
         </div>
         <div class="tool-skill-item">
           <div class="tool-skill-img"><img :src="sass">
@@ -145,6 +154,15 @@
             </div>
           </div>
           <div class="tool-skill-name">Intelij</div>
+        </div>
+        <div class="tool-skill-item">
+          <div class="tool-skill-img"><img :src="docker">
+          </div>
+          <div class="chart-block">
+            <div class="chart-item chart-30">
+            </div>
+          </div>
+          <div class="tool-skill-name">docker</div>
         </div>
         <div class="tool-skill-item">
           <div class="tool-skill-img"><img :src="googleanalytics">
@@ -215,6 +233,8 @@
         seo: require("@/assets/img/toolskill/seo.png"),
         design: require("@/assets/img/toolskill/design.png"),
         backlog: require("@/assets/img/toolskill/backlog.png"),
+        wordpress: require("@/assets/img/toolskill/wordpress.png"),
+        docker: require("@/assets/img/toolskill/docker.png"),
       };
     }
   }
