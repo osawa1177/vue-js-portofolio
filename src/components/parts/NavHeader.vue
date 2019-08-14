@@ -1,6 +1,6 @@
 <template>
 
-  <header :class="hiddenClass" class="header-visible">
+  <header class="header" :class="{'sticky': position > 0}">
     <div class="wrap d-flex justify-content-between">
       <h1 class="site-title">
         <router-link to="/"><img :src="logo" alt="tomohisa.osawa-logo" class=""></router-link>
