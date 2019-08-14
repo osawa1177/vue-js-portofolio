@@ -73,14 +73,14 @@
     position: relative;
 
     &:before {
-      background-color: #d6e7f7;
+      background-color: #1390ff;
       left: 0;
       bottom: 0;
       width: 2px;
       content: '';
       opacity: .5;
       position: absolute;
-      height: 110px;
+      height: 116px;
       top: -20%;
     }
 
@@ -111,7 +111,7 @@
 
   .education-date {
     color: #1a1a1a;
-    background-color: #d6e7f7;
+    background-color: #fff;
     margin-left: 0;
     margin-right: 22px;
     padding: 8px 6px;
@@ -146,7 +146,7 @@
     border-bottom: 16px solid transparent !important;
     border-right: 10px solid transparent !important;
     border-left: 10px solid transparent;
-    border-color: #d6e7f7;
+    border-color: #fff;
   }
 
   .education-box {

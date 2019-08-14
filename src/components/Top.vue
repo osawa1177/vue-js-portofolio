@@ -12,7 +12,7 @@
   import mainblock from "@/components/parts/Main";
   import service from "@/components/parts/Service";
   import works from "@/components/parts/top/Works";
-  import about from "@/components/parts/top/About";
+  import about from "@/components/parts/top/experiences";
   import toolskill from "@/components/parts/top/ToolSkill";
 
   export default {
