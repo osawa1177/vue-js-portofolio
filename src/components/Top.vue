@@ -33,7 +33,7 @@
     methods: {
       Scroll: (evt, el) => {
         let top = el.getBoundingClientRect().top;
-        if (window.scrollY > top + window.pageYOffset + -320) {
+        if (window.scrollY > top + window.pageYOffset - 600) {
           el.classList.add("in-screen");
           return true;
         }
