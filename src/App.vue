@@ -23,16 +23,19 @@
       hnav: HeaderNav,
       fnav: Footer,
       moveline: moveline,
-      GoTop
+      GoTop,
     },
+
     data: function () {
       return {
         imagePath: require("@/assets/img/logo.svg")
       };
-    }
-  };
+    },
+
+  }
 </script>
 <style>
+
   .vue-go-top{
     background-color: #1390ff!important;
     outline: none;

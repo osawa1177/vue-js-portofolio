@@ -1,10 +1,10 @@
 <template>
   <main>
     <mainblock></mainblock>
-    <ser></ser>
-    <works></works>
-    <about></about>
-    <toolskill></toolskill>
+    <ser v-scroll="Scroll" class="slideInBottom_slow"></ser>
+    <works v-scroll="Scroll" class="slideInBottom_slow"></works>
+    <about v-scroll="Scroll" class="slideInBottom_slow"></about>
+    <toolskill v-scroll="Scroll" class="slideInBottom_slow"></toolskill>
   </main>
 </template>
 
@@ -14,25 +14,38 @@
   import works from "@/components/parts/top/Works";
   import about from "@/components/parts/top/experiences";
   import toolskill from "@/components/parts/top/ToolSkill";
+  import MixinScroll from '@/components/mixin/scroll';
 
   export default {
     name: "top",
     title: "Top",
     description: " tomohisa ohsawaのポートフォリオサイト",
     props: ["data"],
-
+    mixins: [MixinScroll],
     components: {
       mainblock: mainblock,
       ser: service,
       works: works,
       about: about,
       toolskill: toolskill,
+    },
+
+    methods: {
+      Scroll: (evt, el) => {
+        let top = el.getBoundingClientRect().top;
+        if (window.scrollY > top + window.pageYOffset + -320) {
+          el.classList.add("in-screen");
+          return true;
+        }
+        return false;
+      },
     }
 
   };
 </script>
 
 <style lang="scss" scoped>
+
 
   @media (max-width: 480px) {
     .main {

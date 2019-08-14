@@ -8,7 +8,6 @@ import VueAnalytics from 'vue-analytics';
 import './assets/style/style.scss';
 import './assets/style/util.scss';
 
-
 Vue.config.productionTip = false;
 Vue.mixin(titleMixin);
 Vue.mixin(descriptionMixin);
@@ -17,7 +16,6 @@ Vue.use(VueAnalytics, {
   router
 });
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,

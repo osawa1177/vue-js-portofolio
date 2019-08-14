@@ -6,7 +6,7 @@
         <section>
           <figure class="work-img"><img :src="worksmain"></figure>
           <p class="work-text">- これまでに携わった様々な作品を掲載しています -</p>
-          <figure>
+          <figure v-scroll="Scroll" class="slideInBottom_slow">
             <img :src="geechs01">
           </figure>
           <h3 class="ttl">geechs job サイト リニューアル </h3>
@@ -16,7 +16,7 @@
           </p>
         </section>
 
-        <section>
+        <section v-scroll="Scroll" class="slideInBottom_slow">
           <figure>
             <img :src="pop01">
           </figure>
@@ -24,7 +24,7 @@
           <p class="skill"> Design / HTML,CSS,javascript</p>
           <p class="read"> 日本全国、様々なスキー場様からご協賛をいただきスキー場検索サイトPOPSNOW内でリフト券のプレゼントキャンペーンを行いました。</p>
         </section>
-        <section>
+        <section v-scroll="Scroll" class="slideInBottom_slow">
           <figure>
             <img :src="fuyu01">
           </figure>
@@ -32,7 +32,7 @@
           <p class="skill"> Design / HTML,CSS,javascript </p>
           <p class="read">冬スポ!!WINTER SPORT FESTAのサイト内にスキー・スノーボードツアーページを作成し、その中で温泉ページ特集を作成しました。</p>
         </section>
-        <section>
+        <section v-scroll="Scroll" class="slideInBottom_slow">
           <figure>
             <img :src="pop02">
           </figure>
@@ -46,8 +46,11 @@
   </div>
 </template>
 <script>
+  import MixinScroll from '@/components/mixin/scroll';
+
   export default {
     title: "works",
+    mixins: [MixinScroll],
     description: "Worksトップページ",
     props: ["data"],
 
@@ -59,6 +62,16 @@
         fuyu01: require("@/assets/img/works/fuyu01.jpg"),
         pop02: require("@/assets/img/works/pop02.jpg")
       };
+    },
+    methods: {
+      Scroll: (evt, el) => {
+        let top = el.getBoundingClientRect().top;
+        if (window.scrollY > top + window.pageYOffset + -500) {
+          el.classList.add("in-screen");
+          return true;
+        }
+        return false;
+      },
     }
   };
 </script>
