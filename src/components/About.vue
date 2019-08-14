@@ -9,6 +9,7 @@
             コーポレートサイト、ECサイト,検索サイト、ランディングページなど様々な、WEBづくりに関するあらゆることにお答えできる経験があります。
             お客様とたくさん話をして、たくさんのアイデアで一緒に夢をカタチにするお手伝いをしています。</p>
         </section>
+
         <section class="about-item">
           <h3>- 都内にてフリーランスのWEB制作をしております。</h3>
 
@@ -51,6 +52,7 @@
 </script>
 
 <style lang="scss" scoped>
+
   iframe {
     filter: grayscale(100%);
   }
@@ -67,7 +69,7 @@
     }
   }
 
-  .about-text{
+  .about-text {
     width: 64%;
     margin: 0 auto;
     padding-bottom: 3rem;
@@ -80,7 +82,7 @@
 
 
     .about-item dt:first-of-type, .about-item dd:first-of-type {
-      border-top: 1px solid #000;
+      border-top: 1px solid #1a1a1a;
     }
 
     dt {
@@ -93,11 +95,11 @@
       border-top: 1px solid #e7e7e7;
 
       &:first-of-type {
-        border-top: 1px solid #000;
+        border-top: 1px solid #1a1a1a;
       }
 
       &:first-of-type {
-        border-top: 1px solid #000;
+        border-top: 1px solid #1a1a1a;
       }
     }
 
@@ -110,11 +112,11 @@
       border-top: 1px solid #e7e7e7;
 
       &:first-of-type {
-        border-top: 1px solid #000;
+        border-top: 1px solid #1a1a1a;
       }
 
       &:first-of-type {
-        border-top: 1px solid #000;
+        border-top: 1px solid #1a1a1a;
       }
     }
 
