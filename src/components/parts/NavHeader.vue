@@ -68,7 +68,7 @@
     methods: {
       Scroll: (evt, el) => {
         let top = el.getBoundingClientRect().top;
-        if (window.scrollY > 500) {
+        if (window.scrollY > 200) {
           el.classList.add("in-screen");
         } else  {
           window.scrollY > 0
@@ -86,19 +86,23 @@
   header {
     width: 100%;
     z-index: 3;
-    visibility: visible;
   }
 
   .in-screen {
     background-color: rgba(255,255,255, 0.5);
     position: fixed;
-    visibility: visible;
-    transition: opacity 2s, visibility 2s;
+    transform-origin: 0 0;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(1);
+
 
     h1{
       width: 10%;
       padding-top: 1rem;
       padding-bottom: .5rem;
+      transform: translateY(0%);
+      transition: all 0.5s;
     }
 
     .header-nav ul{
