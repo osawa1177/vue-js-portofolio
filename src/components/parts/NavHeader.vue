@@ -1,6 +1,6 @@
 <template>
 
-  <header class="header" :class="{'sticky': position > 0}">
+  <header v-scroll="Scroll">
     <div class="wrap d-flex justify-content-between">
       <h1 class="site-title">
         <router-link to="/"><img :src="logo" alt="tomohisa.osawa-logo" class=""></router-link>
@@ -54,38 +54,31 @@
 </template>
 
 <script>
+
+  import MixinScroll from '@/components/mixin/scroll';
   export default {
+  mixins: [MixinScroll],
 
-    data: function () {
-      return {
-        logo: require("@/assets/img/logo.svg"),
-        hiddenClass: {},
-      };
-    },
-
-    mounted() {
-      window.addEventListener('scroll' , this.handleScroll);
-    },
-    destroyed() {
-      window.removeEventListener('scroll' , this.handleScroll);
-    },
-
+  data: function () {
+    return {
+      logo: require("@/assets/img/logo.svg"),
+      hiddenClass: {},
+    };
+  },
     methods: {
-      handleScroll() {
-        const title = document.querySelector(' .header-visible');
-        const rect = title.getBoundingClientRect().top;
-
-        this.targetRect = rect;
-
-        if(this.targetRect >= 0){
-          this.$set(this.hiddenClass, 'hidden', '');
-        }else {
-          this.$set(this.hiddenClass, 'hidden', ' ');
+      Scroll: (evt, el) => {
+        let top = el.getBoundingClientRect().top;
+        if (window.scrollY > 500) {
+          el.classList.add("in-screen");
+        } else  {
+          window.scrollY > 0
+          el.classList.remove("in-screen");
         }
-      }
+      },
     }
 
-  };
+  }
+  ;
 </script>
 
 <style lang="scss" scoped>
@@ -93,17 +86,24 @@
   header {
     width: 100%;
     z-index: 3;
+    visibility: visible;
   }
 
-  .sticky {
-    background: rgba(200, 200, 200, 1);
-    text-align: left;
-    text-shadow: 0px 1px 2px #777;
-    color: white;
-    font-size: 2rem;
-    padding-left: 10px;
-    height: 4rem;
-    line-height: 4rem;
+  .in-screen {
+    background-color: rgba(255,255,255, 0.5);
+    position: fixed;
+    visibility: visible;
+    transition: opacity 2s, visibility 2s;
+
+    h1{
+      width: 10%;
+      padding-top: 1rem;
+      padding-bottom: .5rem;
+    }
+
+    .header-nav ul{
+      padding-top: 0rem;
+    }
   }
 
   .router-link-exact-active {
@@ -186,14 +186,14 @@
       font-size: 1rem;
     }
 
-   .header-nav .header-pc {
+    .header-nav .header-pc {
       display: none;
     }
     .header-nav .header-sp {
       display: block;
     }
 
-    .header-nav ul{
+    .header-nav ul {
       flex-wrap: wrap;
     }
 

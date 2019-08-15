@@ -14,7 +14,7 @@
 
         <div class="education">
           <div class="education-box"><span class="education-date"> <span>2014 - 2015</span> </span>
-            <h3><a target="_blank" href="https://www.alts.co.jp/"> 星野リゾート アルツ磐梯スキー場 </a></h3>
+            <h3><a target="_blank" href="https://www.alts.co.jp/"> 星野リゾート アルツ磐梯スキー場 / 業務委託 </a></h3>
             <p>HTML、CSS、PHPなどを使いWeb制作、更新業務を行う。
               またDTPなどの知識なども身につけ、Google Analyticsなどを使いサイトを解析する技術などを身につける。</p>
           </div>
@@ -37,8 +37,8 @@
         </div>
 
         <div class="education">
-          <div class="education-box"><span class="education-date"> <span>2018 - 2019</span> </span>
-            <h3><a target="_blank" href="https://geechs-job.com/"> geechs 株式会社 </a></h3>
+          <div class="education-box"><span class="education-date"> <span>2018 - 2019 </span> </span>
+            <h3><a target="_blank" href="https://geechs-job.com/"> geechs 株式会社 </a> <span class="free-start">フリーランススタート</span></h3>
             <p>フリーランス案件検索サイトのリニューアル作業を行い、HTML、CSS、Javascript、icon作成業務、Google
               Analyticsを使いサイトの解析などを行う。(Gulp,FLOCSS,Laravel,pardot)
             </p>
@@ -207,6 +207,11 @@
         }
       }
     }
+  }
+  .free-start{
+    font-size: 8px;
+    padding-top: 5px;
+    color: #128fff;
   }
 
   @media (max-width: 480px) {
