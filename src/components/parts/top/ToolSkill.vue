@@ -367,8 +367,12 @@
 
   @media (max-width: 480px) {
 
-    .skills {
+    h2{
+      font-size: 1.3em;
+    }
 
+    .tool-skill-item {
+      width: 31.5%;
 
     }
 

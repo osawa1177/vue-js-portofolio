@@ -5,17 +5,17 @@
       <div class="wrap row justify-content-around">
         <div class="col">
           <figure class="figure-block"><img :src="icon1" class="figure-block-item"></figure>
-          <h3>Direction</h3><span>ディレクション</span>
+          <h3>Direction</h3><span class="sub-title">ディレクション</span>
           <p>お客様の要望をヒアリングし、現状の問題点を洗い出し、ベストなプランを提案します。</p>
         </div>
         <div class="col">
           <figure class="figure-block"><img :src="icon2" class="figure-block-item"></figure>
-          <h3>Design</h3><span>デザイン</span>
+          <h3>Design</h3><span class="sub-title">デザイン</span>
           <p>使う人にわかりやすくを常に意識して、使う人が迷わない、UI・UXを心がけています。</p>
         </div>
         <div class="col">
           <figure class="figure-block"><img :src="icon3" class="figure-block-item"></figure>
-          <h3>Coding</h3><span>コーディング</span>
+          <h3>Coding</h3><span class="sub-title">コーディング</span>
           <p>Javascript（jQuery. vue.js）を使用した動きのあるサイトやSPAなど様々なサイトコーディングを行っております。</p>
         </div>
       </div>
@@ -27,9 +27,9 @@
   export default {
     data: function () {
       return {
-        icon1: require("../../assets/img/top/icon1.svg"),
-        icon2: require("../../assets/img/top/icon2.svg"),
-        icon3: require("../../assets/img/top/icon3.svg")
+        icon1: require("@/assets/img/top/icon1.svg"),
+        icon2: require("@/assets/img/top/icon2.svg"),
+        icon3: require("@/assets/img/top/icon3.svg")
       };
     }
   };
@@ -74,7 +74,7 @@
       color: #1a1a1a;
     }
 
-    span {
+    .sub-title {
       text-align: center;
       display: block;
       margin-bottom: .8rem;
@@ -91,6 +91,15 @@
     .service {
       h2 {
         top: -62px;
+        font-size: 1.3em;
+      }
+      h3 {
+        font-size: 1rem;
+
+      }
+
+      .sub-title {
+        font-size: .6rem;
       }
 
       .col {

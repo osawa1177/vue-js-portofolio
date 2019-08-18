@@ -10,7 +10,7 @@
 
 <script>
   import mainblock from "@/components/parts/Main";
-  import service from "@/components/parts/Service";
+  import service from "@/components/parts/top/Service";
   import works from "@/components/parts/top/Works";
   import about from "@/components/parts/top/experiences";
   import toolskill from "@/components/parts/top/ToolSkill";

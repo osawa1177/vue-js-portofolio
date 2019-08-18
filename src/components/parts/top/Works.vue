@@ -110,6 +110,11 @@
 
   @media (max-width: 480px) {
     .works {
+
+      h2{
+        font-size: 1.3em;
+      }
+
       .img4 {
         width: 75%;
       }

@@ -217,9 +217,27 @@
   @media (max-width: 480px) {
     .experiences {
 
+      h2{
+        font-size: 1.3em;
+      }
+
       ul {
         padding: 0;
       }
     }
+
+    .education {
+
+      &:before{
+        height: 125%;
+      }
+
+      &-wrap {
+        padding-left: 12rem;
+      }
+    }
+
+
+
   }
 </style>

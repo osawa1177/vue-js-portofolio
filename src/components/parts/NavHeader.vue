@@ -181,10 +181,18 @@
 
   @media (max-width: 480px) {
 
+    .in-screen {
+
+      h1{
+        width: 15%;
+      }
+    }
+
+
     .site-title {
       float: none;
       width: 80%;
-      margin-top: 20px;
+      margin-top: 5px;
       margin-bottom: 0;
       margin-left: 10px;
       font-size: 1rem;
@@ -235,7 +243,6 @@
       }
 
       #menu-icon {
-        background-color: rgba(255, 255, 255, 0.7); /*アイコン部分背景色*/
         color: #333; /*アイコン（フォント）色*/
         cursor: pointer;
         display: block;

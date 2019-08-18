@@ -2,7 +2,7 @@
   <div>
     <div class="sub-wrap work-stop mt-4 relative">
       <h2>Works</h2>
-      <article>
+      <article class="wrap">
         <section>
           <figure class="work-img"><img :src="worksmain"></figure>
           <p class="work-text">- これまでに携わった様々な作品を掲載しています -</p>

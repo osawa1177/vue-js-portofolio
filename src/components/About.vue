@@ -2,7 +2,7 @@
   <div>
     <div class="sub-wrap about relative mt-4 mb-5">
       <h2>About</h2>
-      <article class="about-block">
+      <article class="about-block wrap">
         <section class="about-item-1">
           <figure class="about-item-1-figure"><img :src="about"></figure>
           <p class="about-text">開業以来、プロジェクトと向き合い妥協のない仕事をしてきました。<br>
