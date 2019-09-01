@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <div class="sub-wrap contact relative mt-4">
+    <main class="sub-wrap contact relative mt-20">
       <h2>Contact</h2>
       <section class="form-block bg">
         <h3 class="contact-title">Contact Me</h3>
@@ -24,10 +23,7 @@
           </div>
         </form>
       </section>
-
-
-    </div>
-  </div>
+  </main>
 </template>
 <script>
 
@@ -40,6 +36,10 @@
 
 <style lang="scss" scoped>
 
+  .mt-20{
+    margin-top: 20rem;
+  }
+
   .contact-title{
     margin-left: 5rem;
     font-size: 2rem;
@@ -50,6 +50,7 @@
 
   .form-block {
     padding: 3rem 0rem 2rem;
+    margin-bottom: 7rem;
   }
 
   .contact {

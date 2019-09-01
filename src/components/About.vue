@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <div class="sub-wrap about relative mt-4 mb-5">
+    <main class="sub-wrap about relative mb-5 mt-20">
       <h2>About</h2>
       <article class="about-block wrap">
         <section class="about-item-1">
@@ -33,8 +32,7 @@
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12952.36749396684!2d139.85734573546537!3d35.74854654773144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1565456811972!5m2!1sja!2sjp"
           width="1000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </article>
-    </div>
-  </div>
+    </main>
 </template>
 <script>
   import MixinScroll from '@/components/mixin/scroll';
@@ -65,6 +63,11 @@
 </script>
 
 <style lang="scss" scoped>
+
+  .mt-20{
+    margin-top: 20rem;
+  }
+
 
   iframe {
     filter: grayscale(100%);

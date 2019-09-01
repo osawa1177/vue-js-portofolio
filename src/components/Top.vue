@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="mt-16">
     <mainblock></mainblock>
     <ser v-scroll="Scroll" class="slideInBottom_slow"></ser>
     <works v-scroll="Scroll" class="slideInBottom_slow"></works>
@@ -12,7 +12,7 @@
   import mainblock from "@/components/parts/Main";
   import service from "@/components/parts/top/Service";
   import works from "@/components/parts/top/Works";
-  import about from "@/components/parts/top/experiences";
+  import about from "@/components/parts/top/Experiences";
   import toolskill from "@/components/parts/top/ToolSkill";
   import MixinScroll from '@/components/mixin/scroll';
 
@@ -45,6 +45,10 @@
 </script>
 
 <style lang="scss" scoped>
+
+  .mt-16{
+    margin-top: 16rem;
+  }
 
 
   @media (max-width: 480px) {

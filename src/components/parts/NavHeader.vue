@@ -56,21 +56,22 @@
 <script>
 
   import MixinScroll from '@/components/mixin/scroll';
-  export default {
-  mixins: [MixinScroll],
 
-  data: function () {
-    return {
-      logo: require("@/assets/img/logo.svg"),
-      hiddenClass: {},
-    };
-  },
+  export default {
+    mixins: [MixinScroll],
+
+    data: function () {
+      return {
+        logo: require("@/assets/img/logo.svg"),
+        hiddenClass: {},
+      };
+    },
     methods: {
       Scroll: (evt, el) => {
         let top = el.getBoundingClientRect().top;
-        if (window.scrollY > 200) {
+        if (window.scrollY > 10) {
           el.classList.add("in-screen");
-        } else  {
+        } else {
           window.scrollY > 0
           el.classList.remove("in-screen");
         }
@@ -86,18 +87,21 @@
   header {
     width: 100%;
     z-index: 3;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    height:165px;
+    transition: height 0.25s ease-in-out 0s, box-shadow 0.2s ease-in-out 0.05s;
+
   }
 
   .in-screen {
-    background-color: rgba(255,255,255, 0.5);
-    position: fixed;
-    transform-origin: 0 0;
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    transform: scale(1);
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 65px;
+    transition: height 0.25s ease-in-out 0s, box-shadow 0.2s ease-in-out 0.05s;
 
 
-    h1{
+    h1 {
       width: 10%;
       padding-top: 1rem;
       padding-bottom: .5rem;
@@ -105,7 +109,7 @@
       transition: all 0.5s;
     }
 
-    .header-nav ul{
+    .header-nav ul {
       padding-top: 0rem;
     }
   }
@@ -183,7 +187,7 @@
 
     .in-screen {
 
-      h1{
+      h1 {
         width: 15%;
       }
     }

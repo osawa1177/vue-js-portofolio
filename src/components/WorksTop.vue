@@ -1,6 +1,5 @@
 <template lang="html">
-  <div>
-    <div class="sub-wrap work-stop mt-4 relative">
+    <main class="sub-wrap work-stop relative mt-20">
       <h2>Works</h2>
       <article class="wrap">
         <section>
@@ -42,8 +41,7 @@
         </section>
       </article>
 
-    </div>
-  </div>
+    </main>
 </template>
 <script>
   import MixinScroll from '@/components/mixin/scroll';
@@ -77,6 +75,10 @@
 </script>
 
 <style lang="scss" scoped>
+
+  .mt-20{
+    margin-top: 20rem;
+  }
 
   .work-img{
     width: 80%;
