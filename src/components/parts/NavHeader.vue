@@ -91,15 +91,13 @@
     left: 0px;
     right: 0px;
     height:165px;
-    transition: height 0.25s ease-in-out 0s, box-shadow 0.2s ease-in-out 0.05s;
+    transition: height 0.25s ease-in-out 0s, width 0.2s ease-in-out 0.05s;
 
   }
 
   .in-screen {
     background-color: rgba(255, 255, 255, 0.5);
     height: 65px;
-    transition: height 0.25s ease-in-out 0s, box-shadow 0.2s ease-in-out 0.05s;
-
 
     h1 {
       width: 10%;
@@ -145,6 +143,8 @@
     padding-top: 4em;
     font-size: 10px;
     display: block;
+    transition: width 0.25s ease-in-out 0.05s;
+
 
     img {
       width: 60%;
