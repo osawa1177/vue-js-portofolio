@@ -1,6 +1,8 @@
 # tomohisa ohsawa ポートフォリオサイト  
 
-> Vue.jsでポートフォリオサイトを作成したリポジトリです。
+> Vue.jsで作成した、経歴と作品をまとめたポートフォリオサイトです。
+
+[Portfolioサイト](http://osawa-tomohisa.under.jp)
 
 ## Build Setup
 
