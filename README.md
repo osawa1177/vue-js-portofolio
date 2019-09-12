@@ -1,4 +1,4 @@
-# tomohisa ohsawa ポートフォリオサイト  
+# tomohisa osawa ポートフォリオサイト  
 
 > Vue.jsで作成した、経歴と作品をまとめたポートフォリオサイトです。
 
