@@ -46,10 +46,9 @@
         </div>
 
         <div class="education">
-          <div class="education-box"><span class="education-date"> <span>2019 - </span> </span>
+          <div class="education-box"><span class="education-date"> <span>2019 - 2020</span> </span>
             <h3><a target="_blank" href="http://geomarketing.co.jp//"> ジオマーケティング株式会社 </a></h3>
-            <p>商業施設とテナントのマッチングサービスgleasinのサイトを制作、UIデザイン HTML、CSS、Javascript、icon作成業務、Google Analyticsを使いサイトの解析
-              などを行う。(Webpacker,Ruby on rails,Wordpress)
+            <p>商業施設とテナントのマッチングサービスgleasinのサイトを制作、UIデザイン Vue.js(Nuxt)。(Nuxt,Ruby on rails)
             </p>
           </div>
         </div>

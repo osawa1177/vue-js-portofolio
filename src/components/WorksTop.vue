@@ -1,47 +1,56 @@
 <template lang="html">
-    <main class="sub-wrap work-stop relative mt-20">
-      <h2>Works</h2>
-      <article class="wrap">
-        <section>
-          <figure class="work-img"><img :src="worksmain"></figure>
-          <p class="work-text">- これまでに携わった様々な作品を掲載しています -</p>
-          <figure v-scroll="Scroll" class="slideInBottom_slow">
-            <img :src="geechs01">
-          </figure>
-          <h3 class="ttl">geechs job サイト リニューアル </h3>
-          <p class="skill"> Icon Design /HTML,CSS,javascript </p>
-          <p class="read"> 以前からあったフリーランス検索サイトのリニューアル作業を行いました。その中でフロントのコーディングをメインに作業しました。<br>
-            <a href="https://geechs-job.com/" target="_blank" class="text-link">https://geechs-job.com/</a>
-          </p>
-        </section>
+  <main class="sub-wrap work-stop relative mt-20">
+    <h2>Works</h2>
+    <article class="wrap">
+      <section>
+        <figure class="work-img"><img :src="worksmain"></figure>
+        <p class="work-text">- これまでに携わった様々な作品を掲載しています -</p>
+        <figure v-scroll="Scroll" class="slideInBottom_slow">
+          <img :src="gleasin">
+        </figure>
+        <h3 class="ttl">gleasin web アプリ </h3>
+        <p class="skill"> UI/UX Design /HTML,CSS,javascript / Vue.js(Nuxt)</p>
+        <p class="read"> 商業施設とテナントを繋ぐマッチングwebアプリ制作、主にデザイン、フロントエンドを担当<br>
+          <a href="https://gleasin.jp/" target="_blank" class="text-link">https://gleasin.jp</a>
+        </p>
+      </section>
+      <section>
+        <figure v-scroll="Scroll" class="slideInBottom_slow">
+          <img :src="geechs01">
+        </figure>
+        <h3 class="ttl">geechs job サイト リニューアル </h3>
+        <p class="skill"> Icon Design /HTML,CSS,javascript </p>
+        <p class="read"> 以前からあったフリーランス検索サイトのリニューアル作業を行いました。その中でフロントのコーディングをメインに作業しました。<br>
+          <a href="https://geechs-job.com/" target="_blank" class="text-link">https://geechs-job.com/</a>
+        </p>
+      </section>
+      <section v-scroll="Scroll" class="slideInBottom_slow">
+        <figure>
+          <img :src="pop01">
+        </figure>
+        <h3 class="ttl">POP SNOW リフト券プレゼントキャンペーン </h3>
+        <p class="skill"> Design / HTML,CSS,javascript</p>
+        <p class="read"> 日本全国、様々なスキー場様からご協賛をいただきスキー場検索サイトPOPSNOW内でリフト券のプレゼントキャンペーンを行いました。</p>
+      </section>
+      <section v-scroll="Scroll" class="slideInBottom_slow">
+        <figure>
+          <img :src="fuyu01">
+        </figure>
+        <h3 class="ttl">冬スポツアー　温泉特集ページ </h3>
+        <p class="skill"> Design / HTML,CSS,javascript </p>
+        <p class="read">冬スポ!!WINTER SPORT FESTAのサイト内にスキー・スノーボードツアーページを作成し、その中で温泉ページ特集を作成しました。</p>
+      </section>
+      <section v-scroll="Scroll" class="slideInBottom_slow">
+        <figure>
+          <img :src="pop02">
+        </figure>
+        <h3 class="ttl">日本スキー場開発様のプレゼントキャンペーンページ</h3>
+        <p class="skill"> Design / HTML,CSS,javascript </p>
+        <p class="read">日本スキー場開発様からご協賛をいただきスキー場検索サイトPOPSNOW内でリフト券のプレゼントキャンペーンを行いました。</p>
+      </section>
+    </article>
 
-        <section v-scroll="Scroll" class="slideInBottom_slow">
-          <figure>
-            <img :src="pop01">
-          </figure>
-          <h3 class="ttl">POP SNOW リフト券プレゼントキャンペーン </h3>
-          <p class="skill"> Design / HTML,CSS,javascript</p>
-          <p class="read"> 日本全国、様々なスキー場様からご協賛をいただきスキー場検索サイトPOPSNOW内でリフト券のプレゼントキャンペーンを行いました。</p>
-        </section>
-        <section v-scroll="Scroll" class="slideInBottom_slow">
-          <figure>
-            <img :src="fuyu01">
-          </figure>
-          <h3 class="ttl">冬スポツアー　温泉特集ページ </h3>
-          <p class="skill"> Design / HTML,CSS,javascript </p>
-          <p class="read">冬スポ!!WINTER SPORT FESTAのサイト内にスキー・スノーボードツアーページを作成し、その中で温泉ページ特集を作成しました。</p>
-        </section>
-        <section v-scroll="Scroll" class="slideInBottom_slow">
-          <figure>
-            <img :src="pop02">
-          </figure>
-          <h3 class="ttl">日本スキー場開発様のプレゼントキャンペーンページ</h3>
-          <p class="skill"> Design / HTML,CSS,javascript </p>
-          <p class="read">日本スキー場開発様からご協賛をいただきスキー場検索サイトPOPSNOW内でリフト券のプレゼントキャンペーンを行いました。</p>
-        </section>
-      </article>
-
-    </main>
+  </main>
 </template>
 <script>
   import MixinScroll from '@/components/mixin/scroll';
@@ -58,7 +67,8 @@
         geechs01: require("@/assets/img/works/geechs01.png"),
         pop01: require("@/assets/img/works/pop01.jpg"),
         fuyu01: require("@/assets/img/works/fuyu01.jpg"),
-        pop02: require("@/assets/img/works/pop02.jpg")
+        pop02: require("@/assets/img/works/pop02.jpg"),
+        gleasin: require("@/assets/img/works/gleasin.png")
       };
     },
     methods: {
@@ -76,16 +86,16 @@
 
 <style lang="scss" scoped>
 
-  .mt-20{
+  .mt-20 {
     margin-top: 20rem;
   }
 
-  .work-img{
+  .work-img {
     width: 80%;
     margin: 0 auto 2rem;
   }
 
-  .work-text{
+  .work-text {
     width: 64%;
     margin: 0 auto 4rem;
     padding-bottom: 3rem;
