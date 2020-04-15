@@ -15,6 +15,7 @@
   import about from "@/components/parts/top/Experiences";
   import toolskill from "@/components/parts/top/ToolSkill";
   import MixinScroll from '@/components/mixin/scroll';
+  import Axios from "axios";
 
   export default {
     name: "top",
@@ -30,6 +31,12 @@
       toolskill: toolskill,
     },
 
+    data() {
+      return {
+        text: null
+      }
+    },
+
     methods: {
       Scroll: (evt, el) => {
         let top = el.getBoundingClientRect().top;
@@ -38,6 +45,18 @@
           return true;
         }
         return false;
+      },
+      submitClick() {
+        const body = {
+          text: this.text
+        };
+        Axios.get(`http://localhost:3000/hoge/${this.text}`)
+        .then(res => {
+          console.log(res.data.name)
+        })
+        .catch(err => {
+          console.log(err)
+        })
       },
     }
 
