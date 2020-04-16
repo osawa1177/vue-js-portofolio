@@ -7,6 +7,8 @@ import router from './router';
 import VueAnalytics from 'vue-analytics';
 import './assets/style/style.scss';
 import './assets/style/util.scss';
+import Vuetify from 'vuetify';
+import "vuetify/dist/vuetify.min.css";
 
 Vue.config.productionTip = false;
 Vue.mixin(titleMixin);
@@ -15,6 +17,7 @@ Vue.use(VueAnalytics, {
   id: 'UA-XXX-X',
   router
 });
+Vue.use(Vuetify)
 
 new Vue({
   el: '#app',
