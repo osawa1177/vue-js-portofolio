@@ -8,6 +8,7 @@ import PageNotFound from '@/components/PageNotFound'
 import BlogHome from '@/components/BlogHome'
 import BlogPost from '@/components/BlogPost'
 import MoviesList from "../components/MoviesList";
+import Home from "../components/Home";
 
 Vue.use(Router)
 
@@ -42,7 +43,11 @@ export default new Router({
       name: 'Movies',
       component:MoviesList
     },
-
+    {
+      path:'/home',
+      name: 'Home',
+      component: Home
+    },
     // {
     //   path: '/blog/',
     //   name: 'blog-home',

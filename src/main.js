@@ -13,6 +13,7 @@ import { createProvider } from 'vue-apollo';
 import { ApolloClient } from 'apollo-client';
 import { HttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
+import store from "./store.js";
 
 import VueApollo, { ApolloProvider } from 'vue-apollo';
 
@@ -45,6 +46,7 @@ Vue.use(Vuetify)
 new Vue({
   el: '#app',
   router,
+  store,
   apolloProvider,
   components: { App },
   template: '<App/>'
