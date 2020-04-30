@@ -2,7 +2,7 @@
 
 > Vue.jsで作成した、経歴と作品をまとめたポートフォリオサイトです。
 
-[Portfolioサイト](http://osawa-tomohisa.under.jp)
+[Portfolioサイト](https://osawa-portfolio.web.app/)
 
 ## Build Setup
 

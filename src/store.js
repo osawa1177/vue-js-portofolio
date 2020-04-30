@@ -5,6 +5,9 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    conunt: 2
-  }
+    count: 2
+  },
+  getters: {
+    doubleCounter: state => state.count * 2
+  },
 });
