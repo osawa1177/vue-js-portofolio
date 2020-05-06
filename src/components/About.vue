@@ -13,18 +13,18 @@
           <h3>- 都内にてフリーランスのWEB制作をしております。</h3>
 
           <dl class="pt-2">
-            <dt>社　名</dt>
+            <dt>社名</dt>
             <dd>Still Good Design</dd>
             <dt>所在地</dt>
             <dd>東京都葛飾区高砂2丁目</dd>
-            <dt>創　業</dt>
+            <dt>創業</dt>
             <dd>2018年9月</dd>
             <dt>事業内容</dt>
             <dd>WEBの企画・提案・設計・デザイン・監理・製作</dd>
             <dt>WEB</dt>
-            <dd>http://osawa-tomohisa.under.jp</dd>
+            <dd>https://osawa-portfolio.web.app/</dd>
             <dt>MAIL</dt>
-            <dd>info@stillgooddesign.jp</dd>
+            <dd>osawa.tomohisa07@gmail.com</dd>
           </dl>
         </section>
 
