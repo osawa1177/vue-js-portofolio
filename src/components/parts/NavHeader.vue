@@ -18,7 +18,7 @@
             <router-link to="/about">About</router-link>
           </li>
           <li>
-            <a href="http://osawa-tomohisa.under.jp/blog">Blog</a>
+            <a href="https://osawa-blog.web.app/">Blog</a>
           </li>
           <li>
             <router-link to="/contact">Contact</router-link>
