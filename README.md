@@ -2,8 +2,6 @@
 
 > Vue.jsで作成した、経歴と作品をまとめたポートフォリオサイトです。
 
-[Portfolioサイト](https://osawa-portfolio.web.app/)
-
 ## Build Setup
 
 ``` bash
