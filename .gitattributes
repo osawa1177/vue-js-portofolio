@@ -1,1 +1,2 @@
-blog/* linguist-documentation
+* linguist-vendored
+*.vue linguist-vendored=false
